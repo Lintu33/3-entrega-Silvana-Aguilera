@@ -4,81 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Link para trabajar CSS-->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!--icono para el navegador-->
-    <link rel="shortcut icon" href="./img/lightbrown_developer_alt_folder_12292.ico">
-    
-    <!--Titulo del sitio que es el nombre de la empresa-->
     <title>LP ⎟ Software</title>
-
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!--Link para trabajar CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--icono para el navegador-->
+    <link rel="shortcut icon" href="../img/lightbrown_developer_alt_folder_12292.ico">
 </head>
-
-<body>
-    <!--Cabecera--> 
+<body class="pag1">
+    <!--Cabecera-->
     <header>
-        <div>
-            <div>
-                <img src="../img/icono LP ligth.png" alt="logo de un mapa">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                    <img src="../img/icono LP ligth.png" alt="logo de un mapa">
+                    <a class="navbar-brand" href="#">LPSOFTWARE</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="./pages/Aboutme.html">About me</a>
+                        <a class="nav-link" href="./pages/Resume.html">Resume</a>
+                        <a class="nav-link" href="./pages/Projects.html">Projecs</a>
+                        <a class="nav-link" href="./pages/Contact.html">Contact</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h1>LPSOFTWARE</h1>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="../pages/Aboutme.html">About me</a>
-                </li>
-                <li>
-                    <a href="../pages/Resume.html">Resume</a>
-                </li>
-                <li>
-                    <a href="../pages/Projects.html">Projects</a>
-                </li>
-                <li>
-                    <a href="../pages/Contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>  
-
+        </nav>
     </header>
-
     <!--INICIO MAIN-->
-    <!--bloque izquierdo-->
-    <!--Seccion para link de resume y proyectos-->
     <main>
-        <section> 
+        <!--bloque izquierdo-->
+        <!--Seccion para link de resume y proyectos-->
+        <section class="fondo">
             <div class="saludoydibujo">
                 <div class="cajasaludo">
                     <div>
-                        <h3 class="titulohello" >Hello! I'm Luis Patricio</h3>
-                        <h2 class="parrafohello" >SENIOR BACKEND ENGINEER</h2>
+                        <h3 class="titulohello">Hello! I'm Luis Patricio</h3>
+                        <h2 class="parrafohello">SENIOR BACKEND ENGINEER</h2>
                     </div>
                     <div class="botones">
                         <div class="botoncajasaludo">
-                            <a href="./pages/cv.html"> Resume </a>   
+                            <a href="./pages/cv.html"> Resume </a>
                         </div>
                         <div class="botoncajasaludo">
                             <a href="./pages/proyectos.html">Proyectos</a>
                         </div>
                     </div>
-                </div>  
+                </div>
+                   <!--Seccion cualidades del desarrollador (con imagen)-->
                 <div class="dibujo">
                     <img src="../img/imagen programador.png" alt="dibujo aludiendo al desarrollador">
-                </div>   
+                </div>
             </div>
 
         </section>
-
-            <!--Seccion cualidades del desarrollador (con imagen)-->   
-
-        <!--Seccion cualidades del desarrollador (con texto e icono)-->
+        <!--Seccion cualidades en cajas-->
         <section>
             <div class="cajascualidades">
                 <div class="cualidades">
@@ -87,7 +76,7 @@
                 </div>
                 <div class="cualidades">
                     <img src="../img/company.png" alt="imagen de companias">
-                    <p>Tipos de empresas</p> 
+                    <p>Tipos de empresas</p>
                 </div>
                 <div class="cualidades">
                     <img src="../img/what I do.png" alt="imagen de proyectos propios">
@@ -96,9 +85,9 @@
             </div>
         </section>
     </main>
-    <!--FIN MAIN--> 
+    <!--FIN MAIN-->
 
-    <!--INICIO FOOTER--> 
+    <!--INICIO FOOTER-->
     <footer>
         <section>
             <p>Copyright / 2023</p>
@@ -108,4 +97,5 @@
     <!--FIN FOOTER-->
 
 </body>
+
 </html>
