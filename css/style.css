@@ -40,6 +40,9 @@ h2,h3{
     text-align: center;
 
 }
+.navbar-nav{
+    align-items: flex-end;
+}
 /*Botones Nav bar*/
 .navbar-nav a{
     color: #f3f3f3;
@@ -65,10 +68,11 @@ h2,h3{
 /*FIN HEADER*/
 
 /*INICIO BODY*/
+/*INICIO MAIN PAG 1*/
+/*fondo*/
 .pag1{
     background-color: #34373a;
 }
-/*INICIO MAIN PAG 1*/
 /*contenedor de textos y botones*/
 .saludoydibujo{
     margin-top: 52px;
@@ -417,18 +421,9 @@ input[type=submit]:hover {
 
 /*seccion de imagen con texto desarrollador*/
 /*FOOTER*/
-footer{
-    width: 100%;
-}
-footer section{
-    width: 100%;
-    height: 51px;
-    background-color: #9E93B1;
-    padding: 8px 40px;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+.pie{
+    background-color: #392c50;
+    color: #f3f3f3
 }
 
 
