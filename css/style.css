@@ -7,12 +7,12 @@
 /*INICIO HEADER*/
 /*tipografía del sitio*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
-
+/*titulos bold*/
 h2,h3{
     font-weight: bold;
 }
 /*Header*/
-/*Nav bar*/
+/*header bootstrap*/
 .container-fluid{
     background-color: #2b1e41;
     padding: 0px 52px;
@@ -34,15 +34,14 @@ h2,h3{
     font-weight: bold;
     font-size: 40px;
 }
+/*Botones Nav bar*/
 .nav-link{
     width: 110px;
     text-align: center;
-
 }
 .navbar-nav{
     align-items: flex-end;
 }
-/*Botones Nav bar*/
 .navbar-nav a{
     color: #f3f3f3;
     margin-left: 8px;
@@ -51,7 +50,6 @@ h2,h3{
     color: #f3f3f3;
     border-radius: 10px;
     border: 2px solid #f3f3f3;
-
 }
 .active, navbar-nav a:hover{
     background-color: #f3f3f3;
@@ -73,7 +71,7 @@ h2,h3{
 }
 /*contenedor de textos y botones*/
 .saludoydibujo{
-    margin-top: 52px;
+    margin: 52px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -81,9 +79,7 @@ h2,h3{
 .cajasaludo{
     width: 648px;
     height: 600px;
-    /* background-color: #7aaaed;  */
     border-radius: 10px;
-    margin-bottom: 52px;
     padding-top: 150px;
 }
 /*subtitulo hello*/
@@ -98,14 +94,12 @@ h2,h3{
     display: flex;
     margin-left: 52px;
 }
-
 .botoncajasaludo{
     display: flex;
     width: 120px;
     text-align: center;
     margin-right: 16px;
 }
-
 /* texto botones resume y proyectos*/
 .botoncajasaludo a{
     width: 100%;
@@ -116,18 +110,19 @@ h2,h3{
     padding: 8px 16px;
 
 }
-main section div div a:hover{
+.botoncajasaludo a:hover{
     background-color:#f3f3f3;
     border: 2px solid #392c50;
     color: #392c50;
 }
-
+.dibujo img{
+    border-radius: 10px;
+}
 
 /*Seccion cualidades del desarrollador*/
 .cajascualidades{
     display: flex;
-    margin-left: 50px;
-    margin-top: 52px;
+    margin-left: 52px;
     margin-bottom: 0px;
     justify-content: space-between;
     width: 1348px;
@@ -135,8 +130,7 @@ main section div div a:hover{
 .cualidades{
     width: 416px;
     height: 200px;
-    padding: 30px;
-    margin-top: 52px;
+    padding: 32px;
     margin-bottom: 52px;
     text-align: center;
     background-color: #8BE1F0; 
@@ -144,11 +138,10 @@ main section div div a:hover{
     box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
     justify-content: space-evenly
     
+}
+.cualidades img{
+    padding-bottom: 32px;
 }   
-
-
-
-
 /*INICIO MAIN PAG 2 "About me"*/
 /*seccion de imagen con texto desarrollador*/
 .contactameyvideo{
@@ -207,6 +200,7 @@ main section div div a:hover{
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
 }
 
 /*FIN MAIN PAG 2 "about me"*/
@@ -428,44 +422,50 @@ input[type=submit]:hover {
 /*RESPONSVE*/
 @media (max-width: 480px){ 
     /*PAG 1 "HOME"*/
+    /*Nav bar*/
     .navbar-brand{
         font-size: 28px;
     }
+    /*INICIO MAIN*/
+    /*bloque izquierdo*/
+    /*Seccion para link de resume y proyectos-->*/
     .cajasaludo{
         width: 344px;
         height: 318px;
-        padding-top: 90px;
     }
-    .cajasaludo div h3{
-        font-size: 14px;
+        /*subtitulos*/
+    /*subtitulo hello*/
+    .titulohello{
+        font-size: 16px;
+        padding-left: 16px;
     }  
-    .cajasaludo div h2{
-        font-size: 18px;
+    .parrafohello{
+        font-size: 20px;
+        padding-left: 16px;
     }  
+    .botones{
+        padding-left: 16px;
+        margin: 0px;
+    }
+    .botoncajasaludo{
+        font-size: 12px;
+        width: 100px;
+    }
+    /*Seccion cualidades del desarrollador (con imagen)*/
     div .dibujo, 
     .dibujo img{
         width: 344px;
         height: 318px;
         margin-top: 26px;
     }
-    .botoncajasaludo{
-        display: flex;
-        font-size: 10px;
-        width: 90px;
-        text-align: center;
-        margin-right: 16px;
-    }
-    /*subtitulos*/
-    
-    /*subtitulo hello*/
-    .titulohello,
-    .parrafohello{
-        padding-left: 48px;
-        padding-bottom: 8px;
-        color: black;
+    /*Seccion cualidades en cajas*/
+     .cajascualidades{
+        justify-content: center;
+
     }
     .cajascualidades{
         flex-direction: column;
+        margin-left: 68px;
     }
     .cualidades{
         margin: 26px 0px;
