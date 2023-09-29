@@ -101,7 +101,8 @@ h2,h3{
     margin-right: 16px;
 }
 /* texto botones resume y proyectos*/
-.botoncajasaludo a{
+.botoncajasaludo a,
+.contactame div a{
     width: 100%;
     border-radius: 10px;
     background-color:#392c50;
@@ -110,7 +111,8 @@ h2,h3{
     padding: 8px 16px;
 
 }
-.botoncajasaludo a:hover{
+.botoncajasaludo a:hover,
+.contactame div a:hover{
     background-color:#f3f3f3;
     border: 2px solid #392c50;
     color: #392c50;
@@ -143,67 +145,56 @@ h2,h3{
     padding-bottom: 32px;
 }   
 /*INICIO MAIN PAG 2 "About me"*/
-/*seccion de imagen con texto desarrollador*/
-.contactameyvideo{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+/*seccion info. desarrollador*/
+.container{
+    padding: 0px;
 }
 
-.video iframe{
-    border-radius: 10px;
-    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
-    margin-top: 104px;
-
-}
 .contactame{
     width: 648px;
     height: 600px;
     padding-top: 8px;
+    margin-top: 52px;
     background-image: url("../img/fondo\ main.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: 102px;
-    padding: 24px 217px 24px 24px;
+    padding: 24px 260px 24px 24px;
     border-radius: 10px;
     box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243); 
 }
-/*padding subtitulo*/
-
 .parrafocontactame{
     padding-top: 24px;
     padding-bottom: 24px;
 }
-/*borde imagen*/
-
-.aboutme div{
-    padding: 8px;
-}
-.redessociales{
-    border-radius: 10px;
-}
-/*padding parrafo*/
-
-/*sobre mi y redes sociales*/
-.cajaaboutme{
-    margin: 52px;
-
-}
-.aboutme{ 
-    text-align: center;
-    width: 1344px;
-    height: 280px;
-    padding: 16px;
-    background-color: #8BE1F0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+/*Seccion info. del desarrollador video*/
+.video iframe{
+    margin-top: 52px;
     border-radius: 10px;
     box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
 }
 
-/*FIN MAIN PAG 2 "about me"*/
+.aboutme div{
+    padding: 2px;
+}
+.redessociales{
+    border-radius: 10px;
+}
+
+.cajaaboutme{
+    margin: 52px 0px;
+
+}
+.aboutme{ 
+    text-align: center;
+    height: auto;
+    padding: 16px;
+    background-color: #8BE1F0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+}
+
+/*FIN PAG 2 "about me"*/
 
 /*INICIO MAIN PAG 3 "CV"*/
 .cv{
@@ -415,9 +406,8 @@ input[type=submit]:hover {
 /*FOOTER*/
 .pie{
     background-color: #392c50;
-    color: #f3f3f3
+    color: #f3f3f3;
 }
-
 
 /*RESPONSVE*/
 @media (max-width: 480px){ 
@@ -429,13 +419,16 @@ input[type=submit]:hover {
     /*INICIO MAIN*/
     /*bloque izquierdo*/
     /*Seccion para link de resume y proyectos-->*/
-    .cajasaludo{
+    .cajasaludo,
+    .contactame,
+    .video iframe{
         width: 344px;
         height: 318px;
     }
         /*subtitulos*/
     /*subtitulo hello*/
-    .titulohello{
+    .titulohello,
+    .tituloparrafo{
         font-size: 16px;
         padding-left: 16px;
     }  
@@ -447,7 +440,8 @@ input[type=submit]:hover {
         padding-left: 16px;
         margin: 0px;
     }
-    .botoncajasaludo{
+    .botoncajasaludo,
+    .contactame div div a{
         font-size: 12px;
         width: 100px;
     }
@@ -459,7 +453,7 @@ input[type=submit]:hover {
         margin-top: 26px;
     }
     /*Seccion cualidades en cajas*/
-     .cajascualidades{
+    .cajascualidades{
         justify-content: center;
 
     }
@@ -469,6 +463,7 @@ input[type=submit]:hover {
     }
     .cualidades{
         margin: 26px 0px;
+        padding: 20px;
         width: 344px;
         height: 165px;
 
@@ -476,7 +471,37 @@ input[type=submit]:hover {
     .cualidades:nth-child(3){
         margin-bottom: 52px;
     }
+    .cualidades img{
+        padding: 13px;
+    }
+    /* FIN PAG 1 "HOME"*/
+    /*INICIO PAG 2 "ABOUT ME"*/
+    .contactame{
+        padding: 0px 95px 0px 4px;
+        margin: 52px 68px 52px;
+    }
+    .contactame h2{
+        padding: 4px;
+        margin-bottom: 0px;
+    }
 
+    .parrafocontactame{
+        font-size: 12px;
+        padding: 0px 4px;
+        margin-bottom: 6px;
+    }
+    .video,
+    .aboutme{
+        margin: 0px 68px;
+        width: 344px;
+        font-size: 12px;
+        
+    }
+    .aboutme{
+        height: auto;
+    }
+
+    
     /*PAG 5 "CONTACT"*/
     .grid{
         grid-template-rows: 20% 40% 40%;
@@ -484,7 +509,8 @@ input[type=submit]:hover {
         grid-template-areas: 
         "contacttexto"
         "datosmapa"
-        "datosformulario ";}
+        "datosformulario ";
+    }
     .datosformulario{
         margin-left: 52px;
     } 
