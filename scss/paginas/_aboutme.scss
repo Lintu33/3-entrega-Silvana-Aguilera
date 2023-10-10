@@ -1,0 +1,51 @@
+/*INICIO MAIN PAG 2 "ABOUT ME"*/
+/*seccion info. desarrollador*/
+.container{
+    padding: 0px;
+}
+
+.contactame{
+    width: 648px;
+    height: 600px;
+    padding-top: 8px;
+    margin-top: 52px;
+    background-image: url("../img/fondo\ main.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 24px 260px 24px 24px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243); 
+}
+.parrafocontactame{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+/*Seccion info. del desarrollador video*/
+.video iframe{
+    margin-top: 52px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+}
+
+.aboutme div{
+    padding: 2px;
+}
+.redessociales{
+    border-radius: 10px;
+}
+
+.cajaaboutme{
+    margin: 52px 0px;
+
+}
+.aboutme{ 
+    text-align: center;
+    height: auto;
+    padding: 16px;
+    background-color: #8BE1F0;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+}
+
+/*FIN PAG 2 "about me"*/

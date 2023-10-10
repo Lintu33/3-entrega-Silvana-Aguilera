@@ -1,0 +1,82 @@
+/*INICIO BODY*/
+/*INICIO MAIN PAG 1 HOME*/
+/*fondo*/
+.pag1{
+    background-color: map-get($colores,fondoindex);
+}
+/*contenedor de textos y botones*/
+.saludoydibujo{
+    margin: 52px 0px;
+    flex-wrap: wrap;
+    display: flex;
+
+    justify-content: space-evenly;
+}
+.cajasaludo{
+    width: 648px;
+    height: 600px;
+    border-radius: 10px;
+    padding-top: 150px;
+}
+/*subtitulo hello*/
+.titulohello,
+.parrafohello{
+    padding-left: 52px;
+    padding-bottom: 8px;
+    color:map-get($colores,texto1);
+}
+/*botones resume y proyectos*/
+.botones{
+    display: flex;
+    margin-left: 52px;
+}
+.botoncajasaludo{
+    display: flex;
+    width: 120px;
+    text-align: center;
+    margin-right: 16px;
+}
+/* texto botones resume y proyectos*/
+.botoncajasaludo a,
+.contactame div a{
+    width: 100%;
+    border-radius: 10px;
+    background-color:map-get($colores,primario);
+    color: map-get($colores,texto1);
+    text-decoration: none;
+    padding: 8px 16px;
+
+}
+.botoncajasaludo a:hover,
+.contactame div a:hover{
+    background-color:map-get($colores,texto1);
+    border: 2px solid map-get($colores,primario);
+    color:map-get($colores,primario);
+}
+.dibujo img{
+    border-radius: 10px;
+}
+
+/*Seccion cualidades del desarrollador*/
+.cajascualidades{
+    display: flex;
+    margin-left: 52px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    width: 1348px;
+}
+.cualidades{
+    width: 416px;
+    height: 200px;
+    padding: 32px;
+    margin-bottom: 52px;
+    text-align: center;
+    background-color: map-get($colores,fondocajas); 
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+    justify-content: space-evenly
+    
+}
+.cualidades img{
+    padding-bottom: 32px;
+}   

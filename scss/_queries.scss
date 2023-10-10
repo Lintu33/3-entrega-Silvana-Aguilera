@@ -1,0 +1,108 @@
+/*RESPONSIVE*/
+@media (max-width: 480px){ 
+    /*PAG 1 "HOME"*/
+    /*Nav bar*/
+    .navbar-brand{
+        font-size: 28px;
+    }
+    /*INICIO MAIN*/
+    /*bloque izquierdo*/
+    /*Seccion para link de resume y proyectos-->*/
+    .cajasaludo,
+    .contactame,
+    .video iframe{
+        width: 344px;
+        height: 318px;
+    }
+        /*subtitulos*/
+    /*subtitulo hello*/
+    .titulohello,
+    .tituloparrafo{
+        font-size: 16px;
+        padding-left: 16px;
+    }  
+    .parrafohello{
+        font-size: 20px;
+        padding-left: 16px;
+    }  
+    .botones{
+        padding-left: 16px;
+        margin: 0px;
+    }
+    .botoncajasaludo,
+    .contactame div div a{
+        font-size: 12px;
+        width: 100px;
+    }
+    /*Seccion cualidades del desarrollador (con imagen)*/
+    div .dibujo, 
+    .dibujo img{
+        width: 344px;
+        height: 318px;
+        margin-top: 26px;
+    }
+    /*Seccion cualidades en cajas*/
+    .cajascualidades{
+        justify-content: center;
+
+    }
+    .cajascualidades{
+        flex-direction: column;
+        margin-left: 68px;
+    }
+    .cualidades{
+        margin: 26px 0px;
+        padding: 20px;
+        width: 344px;
+        height: 165px;
+
+    } 
+    .cualidades:nth-child(3){
+        margin-bottom: 52px;
+    }
+    .cualidades img{
+        padding: 13px;
+    }
+    /* FIN PAG 1 "HOME"*/
+    /*INICIO PAG 2 "ABOUT ME"*/
+    .contactame{
+        padding: 0px 95px 0px 4px;
+        margin: 52px 68px 52px;
+    }
+    .contactame h2{
+        padding: 4px;
+        margin-bottom: 0px;
+    }
+
+    .parrafocontactame{
+        font-size: 12px;
+        padding: 0px 4px;
+        margin-bottom: 6px;
+    }
+    .video,
+    .aboutme{
+        margin: 0px 68px;
+        width: 344px;
+        font-size: 12px;
+
+    }
+    .aboutme{
+        height: auto;
+    }
+
+    
+    /*PAG 5 "CONTACT"*/
+    .grid{
+        grid-template-rows: 20% 40% 40%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "contacttexto"
+        "datosmapa"
+        "datosformulario ";
+    }
+    .datosformulario{
+        margin-left: 52px;
+    } 
+    /*FIN 5 "CONTACT"*/
+}
+
