@@ -84,47 +84,41 @@ h2, h3 {
 /*fondo*/
 .pag1 {
   background-color: #34373a;
+  /*contenedor de textos y botones*/
+  /*Seccion cualidades del desarrollador*/
 }
-
-/*contenedor de textos y botones*/
-.saludoydibujo {
+.pag1 .saludoydibujo {
   margin: 52px 0px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-evenly;
 }
-
-.cajasaludo {
+.pag1 .saludoydibujo .cajasaludo {
   width: 648px;
   height: 600px;
   border-radius: 10px;
   padding-top: 150px;
+  /*subtitulo hello*/
+  /*botones resume y proyectos*/
 }
-
-/*subtitulo hello*/
-.titulohello,
-.parrafohello {
+.pag1 .saludoydibujo .cajasaludo .titulohello,
+.pag1 .saludoydibujo .cajasaludo .parrafohello {
   padding-left: 52px;
   padding-bottom: 8px;
   color: #f3f3f3;
 }
-
-/*botones resume y proyectos*/
-.botones {
+.pag1 .saludoydibujo .cajasaludo .botones {
   display: flex;
   margin-left: 52px;
 }
-
-.botoncajasaludo {
+.pag1 .saludoydibujo .cajasaludo .botones .botoncajasaludo {
   display: flex;
   width: 120px;
   text-align: center;
   margin-right: 16px;
+  /* texto botones resume y proyectos*/
 }
-
-/* texto botones resume y proyectos*/
-.botoncajasaludo a,
-.contactame div a {
+.pag1 .saludoydibujo .cajasaludo .botones .botoncajasaludo a {
   width: 100%;
   border-radius: 10px;
   background-color: #392c50;
@@ -132,28 +126,22 @@ h2, h3 {
   text-decoration: none;
   padding: 8px 16px;
 }
-
-.botoncajasaludo a:hover,
-.contactame div a:hover {
+.pag1 .saludoydibujo .cajasaludo .botones .botoncajasaludo a:hover {
   background-color: #f3f3f3;
   border: 2px solid #392c50;
   color: #392c50;
 }
-
-.dibujo img {
+.pag1 .dibujo img {
   border-radius: 10px;
 }
-
-/*Seccion cualidades del desarrollador*/
-.cajascualidades {
+.pag1 .cajascualidades {
   display: flex;
   margin-left: 52px;
   margin-bottom: 0px;
   justify-content: space-between;
   width: 1348px;
 }
-
-.cualidades {
+.pag1 .cajascualidades .cualidades {
   width: 416px;
   height: 200px;
   padding: 32px;
@@ -164,8 +152,7 @@ h2, h3 {
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
   justify-content: space-evenly;
 }
-
-.cualidades img {
+.pag1 .cajascualidades .cualidades img {
   padding-bottom: 32px;
 }
 
@@ -187,6 +174,21 @@ h2, h3 {
   padding: 24px 260px 24px 24px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
+}
+
+.contactame div a:hover {
+  background-color: #f3f3f3;
+  border: 2px solid #392c50;
+  color: #392c50;
+}
+
+.contactame div a {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #392c50;
+  color: #f3f3f3;
+  text-decoration: none;
+  padding: 8px 16px;
 }
 
 .parrafocontactame {
