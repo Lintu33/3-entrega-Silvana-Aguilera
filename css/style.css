@@ -161,8 +161,7 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
 .container {
   padding: 0px;
 }
-
-.contactame {
+.container .contactame {
   width: 648px;
   height: 600px;
   padding-top: 8px;
@@ -174,15 +173,13 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   padding: 24px 260px 24px 24px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
+  /*Seccion info. del desarrollador video*/
 }
-
-.contactame div a:hover {
-  background-color: #f3f3f3;
-  border: 2px solid #392c50;
-  color: #392c50;
+.container .contactame .parrafocontactame {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
-
-.contactame div a {
+.container .contactame div a {
   width: 100%;
   border-radius: 10px;
   background-color: #392c50;
@@ -190,38 +187,33 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   text-decoration: none;
   padding: 8px 16px;
 }
-
-.parrafocontactame {
-  padding-top: 24px;
-  padding-bottom: 24px;
+.container .contactame div a:hover {
+  background-color: #f3f3f3;
+  border: 2px solid #392c50;
+  color: #392c50;
 }
-
-/*Seccion info. del desarrollador video*/
-.video iframe {
+.container .contactame .video iframe {
   margin-top: 52px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
 }
 
-.aboutme div {
-  padding: 2px;
-}
-
-.redessociales {
-  border-radius: 10px;
-}
-
 .cajaaboutme {
   margin: 52px 0px;
 }
-
-.aboutme {
+.cajaaboutme .aboutme {
   text-align: center;
   height: auto;
   padding: 16px;
   background-color: #8BE1F0;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
+}
+.cajaaboutme .aboutme .redessociales {
+  border-radius: 10px;
+}
+.cajaaboutme .aboutme div {
+  padding: 2px;
 }
 
 /*FIN PAG 2 "about me"*/

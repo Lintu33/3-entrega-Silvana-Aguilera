@@ -2,63 +2,58 @@
 /*seccion info. desarrollador*/
 .container{
     padding: 0px;
+    .contactame{
+        width: 648px;
+        height: 600px;
+        padding-top: 8px;
+        margin-top: 52px;
+        background-image: url("../img/fondo\ main.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 24px 260px 24px 24px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243); 
+        .parrafocontactame{
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+        div a {
+            width: 100%;
+            border-radius: 10px;
+            background-color: map-get($colores, primario);
+            color: map-get($colores, texto1);
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        div a:hover {
+            background-color: map-get($colores, texto1);
+            border: 2px solid map-get($colores, primario);
+            color: map-get($colores, primario);
+        }
+                /*Seccion info. del desarrollador video*/
+        .video iframe{
+            margin-top: 52px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+        }
+    }
 }
-
-.contactame{
-    width: 648px;
-    height: 600px;
-    padding-top: 8px;
-    margin-top: 52px;
-    background-image: url("../img/fondo\ main.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 24px 260px 24px 24px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243); 
-}
-.contactame div a:hover {
-    background-color: map-get($colores, texto1);
-    border: 2px solid map-get($colores, primario);
-    color: map-get($colores, primario);
-}
-.contactame div a {
-    width: 100%;
-    border-radius: 10px;
-    background-color: map-get($colores, primario);
-    color: map-get($colores, texto1);
-    text-decoration: none;
-    padding: 8px 16px;
-}
-.parrafocontactame{
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-/*Seccion info. del desarrollador video*/
-.video iframe{
-    margin-top: 52px;
-    border-radius: 10px;
-    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
-}
-
-.aboutme div{
-    padding: 2px;
-}
-.redessociales{
-    border-radius: 10px;
-}
-
 .cajaaboutme{
     margin: 52px 0px;
-
+    .aboutme{
+        text-align: center;
+        height: auto;
+        padding: 16px;
+        background-color: #8BE1F0;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+        .redessociales{
+            border-radius: 10px;
+        }
+        div{
+            padding: 2px; 
+        }
+    }
 }
-.aboutme{ 
-    text-align: center;
-    height: auto;
-    padding: 16px;
-    background-color: #8BE1F0;
-    border-radius: 10px;
-    box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
-}
-
 /*FIN PAG 2 "about me"*/
