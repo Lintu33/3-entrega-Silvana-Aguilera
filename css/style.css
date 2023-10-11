@@ -232,27 +232,21 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
 .row {
   justify-content: center;
 }
-
-.carousel-inner {
+.row .carousel-inner {
   padding-top: 156px;
   height: 508px;
 }
-
-/* .carousel-caption{
-    margin-left:100px;
-    margin-right:100px;
-} */
-.carousel-control-next,
-.carousel-control-prev {
+.row .carousel-inner .carousel-control-next,
+.row .carousel-inner .carousel-control-prev {
   margin-top: 160px;
   height: 320px;
 }
-
-.carousel-inner img {
+.row .carousel-inner .carousel-control-next img,
+.row .carousel-inner .carousel-control-prev img {
   padding-left: 195px;
 }
-
-.carousel-caption p {
+.row .carousel-inner .carousel-control-next .carousel-caption p,
+.row .carousel-inner .carousel-control-prev .carousel-caption p {
   margin-bottom: 285px;
 }
 
@@ -273,12 +267,10 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
 .trabajemos {
   margin: 52px;
 }
-
-.trabajemosjuntos {
+.trabajemos .trabajemosjuntos {
   padding: 4px;
 }
-
-.botoncontact {
+.trabajemos .botoncontact {
   margin: 8px;
 }
 
