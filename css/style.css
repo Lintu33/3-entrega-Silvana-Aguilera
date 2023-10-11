@@ -160,6 +160,7 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
 /*seccion info. desarrollador*/
 .container {
   padding: 0px;
+  /*Seccion info. del desarrollador video*/
 }
 .container .contactame {
   width: 648px;
@@ -173,7 +174,6 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   padding: 24px 260px 24px 24px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
-  /*Seccion info. del desarrollador video*/
 }
 .container .contactame .parrafocontactame {
   padding-top: 24px;
@@ -192,7 +192,7 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   border: 2px solid #392c50;
   color: #392c50;
 }
-.container .contactame .video iframe {
+.container .video iframe {
   margin-top: 52px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
@@ -241,16 +241,17 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   margin-top: 160px;
   height: 320px;
 }
-.row .carousel-inner .carousel-control-next img,
-.row .carousel-inner .carousel-control-prev img {
+.row .carousel-inner img {
   padding-left: 195px;
 }
-.row .carousel-inner .carousel-control-next .carousel-caption p,
-.row .carousel-inner .carousel-control-prev .carousel-caption p {
+.row .carousel-inner .carousel-caption p {
   margin-bottom: 285px;
 }
 
-.contacto {
+.trabajemos {
+  margin: 52px;
+}
+.trabajemos .contacto {
   text-align: center;
   align-items: center;
   justify-content: space-evenly;
@@ -263,15 +264,22 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   background-repeat: no-repeat;
   border-radius: 10px;
 }
-
-.trabajemos {
-  margin: 52px;
-}
-.trabajemos .trabajemosjuntos {
+.trabajemos .contacto .trabajemosjuntos {
   padding: 4px;
 }
-.trabajemos .botoncontact {
+.trabajemos .contacto .botoncontact a {
   margin: 8px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #392c50;
+  color: #f3f3f3;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+.trabajemos .contacto .botoncontact a:hover {
+  background-color: #f3f3f3;
+  border: 2px solid #392c50;
+  color: #392c50;
 }
 
 /*FIN MAIN PAG 4 "PROYECTOS"*/

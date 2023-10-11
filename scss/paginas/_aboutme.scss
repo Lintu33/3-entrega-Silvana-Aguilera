@@ -30,14 +30,14 @@
             background-color: map-get($colores, texto1);
             border: 2px solid map-get($colores, primario);
             color: map-get($colores, primario);
-        }
-                /*Seccion info. del desarrollador video*/
-        .video iframe{
-            margin-top: 52px;
-            border-radius: 10px;
-            box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
-        }
+        }    
     }
+    /*Seccion info. del desarrollador video*/
+    .video iframe{
+        margin-top: 52px;
+        border-radius: 10px;
+        box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+        }
 }
 .cajaaboutme{
     margin: 52px 0px;

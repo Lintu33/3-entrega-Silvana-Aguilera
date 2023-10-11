@@ -8,35 +8,46 @@
         .carousel-control-prev{
         margin-top: 160px;
         height: 320px;
+        }
         img{
             padding-left: 195px;
-            }
+        }
         .carousel-caption p{
             margin-bottom: 285px;
-            }
         }
     }
 }
-.contacto{
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 1344px;
-    height: 280px;
-    padding: 16px;
-    background-color: #8BE1F0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-}
 .trabajemos{
     margin: 52px;
-    .trabajemosjuntos{
-        padding: 4px;
-    }
-    .botoncontact{
-        margin: 8px;
+    .contacto{
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 1344px;
+        height: 280px;
+        padding: 16px;
+        background-color: #8BE1F0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        .trabajemosjuntos{
+            padding: 4px;
+        }
+        .botoncontact a{
+            margin: 8px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: map-get($colores, primario);
+            color: map-get($colores, texto1);
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+        .botoncontact a:hover {
+            background-color: map-get($colores, texto1);
+            border: 2px solid map-get($colores, primario);
+            color: map-get($colores, primario);
+        }
     }
 }
 /*FIN MAIN PAG 4 "PROYECTOS"*/
