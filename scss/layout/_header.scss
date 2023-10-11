@@ -8,46 +8,47 @@
     img{
         padding-right: 8px;
     }
-    .collapse{
-        justify-content: end;
-    }
-}
-
-.navbar{
-    padding: 0px;
-}
-/*marca*/
-.navbar-brand{
+    /*marca*/
+    .navbar-brand{
     color:map-get($colores,marca);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 40px;
+    }
+    .navbar{
+        padding: 0px;
+    }
+    
+    .collapse{
+        justify-content: end;
+        .navbar-nav{
+            align-items: flex-end;
+            a{
+                color:map-get($colores,texto1);
+                margin-left: 8px;
+            }
+            a:hover{
+                color: map-get($colores,texto1);
+                border-radius: 10px;
+                border: 2px solid #f3f3f3;
+            }
+            .active, navbar-nav a{
+                background-color: map-get($colores,texto1);
+                color: map-get($colores,primario);
+                border-radius: 10px;
+                border: 1px solid map-get($colores,texto1);
+                box-shadow: 0 0 26px 1px map-get($colores,texto1);
+            }
+            /*Botones Nav bar*/
+            .nav-link{
+            width: 110px;
+            text-align: center;
+            }
+        }
+        
+    }
 }
-/*Botones Nav bar*/
-.nav-link{
-    width: 110px;
-    text-align: center;
-}
-.navbar-nav{
-    align-items: flex-end;
-}
-.navbar-nav a{
-    color:map-get($colores,texto1);
-    margin-left: 8px;
-}
-.navbar-nav a:hover{
-    color: map-get($colores,texto1);
-    border-radius: 10px;
-    border: 2px solid #f3f3f3;
-}
-.active, navbar-nav a:hover{
-    background-color: map-get($colores,texto1);
-    color: map-get($colores,texto1);
-    border-radius: 10px;
-    border: 1px solid map-get($colores,texto1);
-    box-shadow: 0 0 26px 1px map-get($colores,texto1);
-}
-.navbar-toggler{
-    background-color: map-get($colores,texto1);
-}
+
+
+
 /*FIN HEADER*/

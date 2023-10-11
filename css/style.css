@@ -25,57 +25,46 @@ h2, h3 {
   background-color: #392c50;
   padding: 0px 52px;
   height: 104px;
+  /*marca*/
 }
 .container-fluid img {
   padding-right: 8px;
 }
-.container-fluid .collapse {
-  justify-content: end;
-}
-
-.navbar {
-  padding: 0px;
-}
-
-/*marca*/
-.navbar-brand {
+.container-fluid .navbar-brand {
   color: #cbb9eb;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   font-size: 40px;
 }
-
-/*Botones Nav bar*/
-.nav-link {
-  width: 110px;
-  text-align: center;
+.container-fluid .navbar {
+  padding: 0px;
 }
-
-.navbar-nav {
+.container-fluid .collapse {
+  justify-content: end;
+}
+.container-fluid .collapse .navbar-nav {
   align-items: flex-end;
+  /*Botones Nav bar*/
 }
-
-.navbar-nav a {
+.container-fluid .collapse .navbar-nav a {
   color: #f3f3f3;
   margin-left: 8px;
 }
-
-.navbar-nav a:hover {
+.container-fluid .collapse .navbar-nav a:hover {
   color: #f3f3f3;
   border-radius: 10px;
   border: 2px solid #f3f3f3;
 }
-
-.active, navbar-nav a:hover {
+.container-fluid .collapse .navbar-nav .active, .container-fluid .collapse .navbar-nav navbar-nav a {
   background-color: #f3f3f3;
-  color: #f3f3f3;
+  color: #392c50;
   border-radius: 10px;
   border: 1px solid #f3f3f3;
   box-shadow: 0 0 26px 1px #f3f3f3;
 }
-
-.navbar-toggler {
-  background-color: #f3f3f3;
+.container-fluid .collapse .navbar-nav .nav-link {
+  width: 110px;
+  text-align: center;
 }
 
 /*FIN HEADER*/
