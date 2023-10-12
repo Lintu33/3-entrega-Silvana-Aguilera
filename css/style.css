@@ -4,7 +4,7 @@
   justify-content: space-evenly;
 }
 
-.background, .container .contactame {
+.background, .trabajemos .contacto, .container .contactame {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -260,10 +260,7 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   height: 280px;
   padding: 16px;
   background-color: #8BE1F0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 10px;
+  border-radius: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
 }
 .trabajemos .contacto .trabajemosjuntos {
   padding: 4px;
@@ -275,7 +272,7 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   background-color: #392c50;
   color: #f3f3f3;
   text-decoration: none;
-  padding: 8px 16px;
+  padding: 16px 16px;
 }
 .trabajemos .contacto .botoncontact a:hover {
   background-color: #f3f3f3;
@@ -283,7 +280,6 @@ nav .container-fluid .collapse .navbar-nav .nav-link {
   color: #392c50;
 }
 
-/*FIN MAIN PAG 4 "PROYECTOS"*/
 .section-title {
   margin: 96px 52px 8px 52px;
 }
