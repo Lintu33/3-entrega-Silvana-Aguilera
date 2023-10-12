@@ -1,30 +1,27 @@
-/*INICIO MAIN PAG 2 "ABOUT ME"*/
 /*seccion info. desarrollador*/
 .container{
     padding: 0px;
     .contactame{
-        width: 648px;
-        height: 600px;
-        padding-top: 8px;
-        margin-top: 52px;
+        width: map-get($medidas,ancho);
+        height: map-get($medidas,alto);
+        padding-top: map-get($medidas,padding-parrafo1);
+        margin-top:map-get($medidas,margen-arriba);
         background-image: url("../img/fondo\ main.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        @extend.background; 
         padding: 24px 260px 24px 24px;
-        border-radius: 10px;
-        box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243); 
+        border-radius:map-get($medidas,esquinas);
+        box-shadow:map-get($medidas,sombra); 
         .parrafocontactame{
-            padding-top: 24px;
-            padding-bottom: 24px;
+            padding-top: map-get($medidas,padding-parrafo3);
+            padding-bottom: map-get($medidas,padding-parrafo3);
         }
         div a {
             width: 100%;
-            border-radius: 10px;
+            border-radius: map-get($medidas,esquinas);
             background-color: map-get($colores, primario);
             color: map-get($colores, texto1);
             text-decoration: none;
-            padding: 8px 16px;
+            padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
         }
         div a:hover {
             background-color: map-get($colores, texto1);
@@ -34,26 +31,25 @@
     }
     /*Seccion info. del desarrollador video*/
     .video iframe{
-        margin-top: 52px;
-        border-radius: 10px;
-        box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+        margin-top: map-get($medidas,margen-arriba);
+        border-radius: map-get($medidas,esquinas);
+        box-shadow: map-get($medidas,sombra);
         }
 }
 .cajaaboutme{
-    margin: 52px 0px;
+    margin: map-get($medidas,margen-arriba) 0px;
     .aboutme{
         text-align: center;
         height: auto;
-        padding: 16px;
+        padding: map-get($medidas,padding-parrafo2);
         background-color: #8BE1F0;
-        border-radius: 10px;
-        box-shadow: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243);
+        border-radius: map-get($medidas,esquinas);
+        box-shadow: map-get($medidas,sombra);
         .redessociales{
-            border-radius: 10px;
+            border-radius: map-get($medidas,esquinas);
         }
         div{
             padding: 2px; 
         }
     }
 }
-/*FIN PAG 2 "about me"*/
