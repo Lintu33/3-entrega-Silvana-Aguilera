@@ -1,5 +1,10 @@
 /*FOOTER*/
 .pie{
-    background-color: #392c50;
-    color: #f3f3f3;
+    background-color: map-get($colores,primario);
+    .col-auto{
+        color: map-get($colores,fondocajas)
+    }
+    .small{
+        color: map-get($colores,fondocajas);
+    }
 }

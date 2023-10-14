@@ -390,7 +390,12 @@ h2, h3 {
 /*FOOTER*/
 .pie {
   background-color: #392c50;
-  color: #f3f3f3;
+}
+.pie .col-auto {
+  color: #8BE1F0;
+}
+.pie .small {
+  color: #8BE1F0;
 }
 
 /*RESPONSIVE*/
