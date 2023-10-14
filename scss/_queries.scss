@@ -15,8 +15,7 @@
                     .nav-link{
                         background-color:map-get($colores , texto1 );
                         color:map-get($colores ,primario ) ;
-                        border-radius: 0px;
-                        
+                        border-radius: 0px; 
                     }
                     .active{
                         background-color:map-get($colores, fondocajas);
@@ -72,57 +71,47 @@
         } 
         .cualidades:nth-child(3){
             margin-bottom: map-get($medidas, margen-arriba);
-        }
-        /* FIN PAG 1 "HOME"*/
+        } 
     }
 }
-
-    
-    
-    
-    
-    
-    /*INICIO PAG 2 "ABOUT ME"*/
-    .contactame div div a{
-        font-size: 12px;
-        width: 100px;
-    }
-    .video iframe{
-        width: 344px;
-        height: 318px;
-    }
-   
-    .contactame,
-    .video iframe{
-        width: 344px;
-        height: 318px;
-    }
+/* FIN PAG 1 "HOME"*/
+/*INICIO PAG 2 "ABOUT ME"*/
+.container{
     .contactame{
-        padding: 0px 95px 0px 4px;
-        margin: 52px 68px 52px;
-    }
-    .contactame h2{
-        padding: 4px;
-        margin-bottom: 0px;
-    }
-
-    .parrafocontactame{
-        font-size: 12px;
-        padding: 0px 4px;
+        width: map-get($medidas, queries-ancho);
+        height: map-get($medidas, queries-alto);
+        margin: map-get($medidas,margen-arriba) map-get($medidas, queries-marginleft);
+        padding: map-get($medidas,queries-parrafo1) map-get($medidas,padding-parrafo1);
         margin-bottom: 6px;
+        .tituloparrafo{
+            font-size:map-get($tamanios, h2);
+            margin-left: map-get($medidas,queries-parrafo1);
+            margin-bottom: map-get($medidas,sin-padding);
+        }
+        .parrafocontactame{
+            margin-bottom: 0px ;
+            padding: map-get($medidas,padding-parrafo1) 80px map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo1);
+            font-size: map-get($tamanios, h4);
+            }
+        div div a{
+            font-size: map-get($tamanios, h4);
+            width: map-get($medidas, queries-boton);
+        } 
+        }
     }
-    .video,
-    .aboutme{
-        margin: 0px 68px;
-        width: 344px;
-        font-size: 12px;
-
+    .video iframe{
+        width: map-get($medidas, queries-ancho);
+        height: map-get($medidas, queries-alto);
+        margin: map-get($medidas, sin-padding)   map-get($medidas, queries-marginleft)
     }
-    .aboutme{
-        height: auto;
-    }
-
+}
     
+.aboutme{
+    margin-left:  map-get($medidas, queries-marginleft);
+    width: map-get($medidas, queries-ancho);
+    font-size: map-get($tamanios, h4);
+    height: auto;
+    }
     /*PAG 5 "CONTACT"*/
     .grid{
         grid-template-rows: 20% 40% 40%;
@@ -136,5 +125,4 @@
         margin-left: 52px;
     } 
     /*FIN 5 "CONTACT"*/
-}
 

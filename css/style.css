@@ -456,7 +456,6 @@ h2, h3 {
   .pag1 .cajascualidades {
     flex-direction: column;
     margin-left: 68px;
-    /* FIN PAG 1 "HOME"*/
   }
   .pag1 .cajascualidades .cualidades {
     margin: 26px 0px;
@@ -470,52 +469,52 @@ h2, h3 {
   .pag1 .cajascualidades .cualidades:nth-child(3) {
     margin-bottom: 52px;
   }
+  /* FIN PAG 1 "HOME"*/
   /*INICIO PAG 2 "ABOUT ME"*/
-  .contactame div div a {
+  .container .contactame {
+    width: 344px;
+    height: 318px;
+    margin: 52px 68px;
+    padding: 8px;
+    margin-bottom: 6px;
+  }
+  .container .contactame .tituloparrafo {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .container .contactame .parrafocontactame {
+    margin-bottom: 0px;
+    padding: 8px 80px 8px 8px;
+    font-size: 12px;
+  }
+  .container .contactame div div a {
     font-size: 12px;
     width: 100px;
   }
   .video iframe {
     width: 344px;
     height: 318px;
-  }
-  .contactame,
-  .video iframe {
-    width: 344px;
-    height: 318px;
-  }
-  .contactame {
-    padding: 0px 95px 0px 4px;
-    margin: 52px 68px 52px;
-  }
-  .contactame h2 {
-    padding: 4px;
-    margin-bottom: 0px;
-  }
-  .parrafocontactame {
-    font-size: 12px;
-    padding: 0px 4px;
-    margin-bottom: 6px;
-  }
-  .video,
-  .aboutme {
     margin: 0px 68px;
-    width: 344px;
-    font-size: 12px;
   }
-  .aboutme {
-    height: auto;
-  }
-  /*PAG 5 "CONTACT"*/
-  .grid {
-    grid-template-rows: 20% 40% 40%;
-    grid-template-columns: 1fr;
-    grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
-  }
-  .datosformulario {
-    margin-left: 52px;
-  }
-  /*FIN 5 "CONTACT"*/
 }
+.aboutme {
+  margin-left: 68px;
+  width: 344px;
+  font-size: 12px;
+  height: auto;
+}
+
+/*PAG 5 "CONTACT"*/
+.grid {
+  grid-template-rows: 20% 40% 40%;
+  grid-template-columns: 1fr;
+  grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
+}
+
+.datosformulario {
+  margin-left: 52px;
+}
+
+/*FIN 5 "CONTACT"*/
 
 /*# sourceMappingURL=style.css.map */
