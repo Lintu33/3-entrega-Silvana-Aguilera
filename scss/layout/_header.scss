@@ -1,55 +1,49 @@
-/*INICIO HEADER*/
-/*Header*/
-/*header bootstrap*/
 .navbar{
     background-color: map-get($colores,primario);
-    margin: 0px;
-    padding: 0px;
+    margin: map-get($medidas,sin-padding);
+    padding: map-get($medidas,sin-padding);
     .container-fluid{
         background-color:map-get($colores,primario);
-        padding: 0px 52px;
+        padding: map-get($medidas,sin-padding) map-get($medidas,margen-arriba);
         height: 104px;
-        margin: 0px;
+        margin: map-get($medidas,sin-padding);
         img{
-            padding-right: 8px;
+            padding-right: map-get($medidas, sin-padding);
         }
         /*marca*/
         .navbar-brand{
         color:map-get($colores,marca);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
-        font-size: 40px;
+        font-size: map-get($tamanios, h1);
         }
         .navbar{
-            padding: 0px;
+            padding: map-get($medidas, sin-padding);
         }
-        
         .collapse{
             justify-content: end;
             .navbar-nav{
                 align-items: flex-end;
                 a{
                     color:map-get($colores,texto1);
-                    margin-left: 8px;
+                    margin-left: map-get($medidas,padding-parrafo1);
                 }
                 a:hover{
                     color: map-get($colores,texto1);
-                    border-radius: 10px;
-                    border: 2px solid #f3f3f3;
+                    border-radius: map-get($medidas, esquinas);
+                    border: 2px solid map-get($colores,texto1);
                 }
                 .active, navbar-nav a{
                     background-color: map-get($colores,texto1);
                     color: map-get($colores,primario);
-                    border-radius: 10px;
+                    border-radius: map-get($medidas, esquinas);
                     border: 1px solid map-get($colores,texto1);
-                    box-shadow: 0 0 16px 1px map-get($colores,texto1);
+                    box-shadow:  map-get($medidas, sombra-active);
                     a:hover{
                         color: map-get($colores,primario);
                     }
                 }
-                
-                
-                /*Botones Nav bar*/
+                /*Botones*/
                 .nav-link{
                 width: 110px;
                 text-align: center;
@@ -58,5 +52,3 @@
         }
     }
 }
-
-/*FIN HEADER*/

@@ -85,7 +85,7 @@
         margin-bottom: 6px;
         .tituloparrafo{
             font-size:map-get($tamanios, h2);
-            margin-left: map-get($medidas,queries-parrafo1);
+            margin-left: map-get($medidas,padding-parrafo1);
             margin-bottom: map-get($medidas,sin-padding);
         }
         .parrafocontactame{
@@ -96,6 +96,7 @@
         div div a{
             font-size: map-get($tamanios, h4);
             width: map-get($medidas, queries-boton);
+            margin-left: map-get($medidas,padding-parrafo1);
         } 
         }
     }
@@ -105,7 +106,6 @@
         margin: map-get($medidas, sin-padding)   map-get($medidas, queries-marginleft)
     }
 }
-    
 .aboutme{
     margin-left:  map-get($medidas, queries-marginleft);
     width: map-get($medidas, queries-ancho);

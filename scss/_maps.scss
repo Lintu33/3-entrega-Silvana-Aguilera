@@ -21,6 +21,7 @@ $medidas:(
     queries-marginleft: 68px,
     queries-margincualidades: 26px,
     queries-padding-cualidades: 20px,
+    queries-parrafo1: 4px,
     sin-padding: 0px,
     padding-parrafo1: 8px,
     padding-parrafo2: 16px,
@@ -29,12 +30,14 @@ $medidas:(
     margen-arriba: 52px,
     margen-inferior: 156px,
     esquinas: 10px,
+    sombra-active: 0 0 16px 1px #f3f3f3,
     sombra: 4px 4px 0px 0px  rgba(113, 113, 113, 0.243),
     sombraformulario: 0 0 24px 0 rgba(0, 0, 0, 0.12)
 );
 $tamanios:(
-    h1: 22px,
-    h2: 20px,
-    h3: 14px,
-    h4: 12px,
+    h1: 40px,
+    h2: 22px,
+    h3: 20px,
+    h4: 14px,
+    h5: 12px,
 )

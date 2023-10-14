@@ -1,9 +1,4 @@
 @charset "UTF-8";
-.flex-center {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .background, .trabajemos .contacto, .container .contactame {
   background-size: cover;
   background-position: center;
@@ -24,9 +19,6 @@ h2, h3 {
   font-weight: bold;
 }
 
-/*INICIO HEADER*/
-/*Header*/
-/*header bootstrap*/
 .navbar {
   background-color: #392c50;
   margin: 0px;
@@ -40,7 +32,7 @@ h2, h3 {
   /*marca*/
 }
 .navbar .container-fluid img {
-  padding-right: 8px;
+  padding-right: 0px;
 }
 .navbar .container-fluid .navbar-brand {
   color: #cbb9eb;
@@ -56,7 +48,7 @@ h2, h3 {
 }
 .navbar .container-fluid .collapse .navbar-nav {
   align-items: flex-end;
-  /*Botones Nav bar*/
+  /*Botones*/
 }
 .navbar .container-fluid .collapse .navbar-nav a {
   color: #f3f3f3;
@@ -82,7 +74,6 @@ h2, h3 {
   text-align: center;
 }
 
-/*FIN HEADER*/
 /*INICIO BODY*/
 /*INICIO MAIN PAG 1 HOME*/
 /*fondo*/
@@ -304,7 +295,7 @@ h2, h3 {
   /* cuadro con formulario */
 }
 .datosmapa .info img {
-  font-size: 20px;
+  font-size: 22px;
   float: left;
   width: 64px;
   height: 64px;
@@ -323,14 +314,14 @@ h2, h3 {
   padding-bottom: 32px;
 }
 .datosmapa .info h4 {
-  font-size: 22px;
+  font-size: 40px;
   font-weight: 600px;
   padding-top: 4px;
 }
 .datosmapa .info p {
   padding: 0 0 8px 52px;
   margin-bottom: 16px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .datosformulario {
@@ -406,7 +397,7 @@ h2, h3 {
   /*PAG 1 "HOME"*/
   /*Nav bar*/
   .navbar .container-fluid .navbar-brand {
-    font-size: 22px;
+    font-size: 40px;
   }
   .navbar .container-fluid .navbar-toggler {
     background-color: #f3f3f3;
@@ -438,13 +429,13 @@ h2, h3 {
     /*subtitulo hello*/
   }
   .pag1 .saludoydibujo .cajasaludo .titulohello {
-    font-size: 14px;
-  }
-  .pag1 .saludoydibujo .cajasaludo .parrafohello {
     font-size: 20px;
   }
+  .pag1 .saludoydibujo .cajasaludo .parrafohello {
+    font-size: 22px;
+  }
   .pag1 .saludoydibujo .cajasaludo .botoncajasaludo {
-    font-size: 12px;
+    font-size: 14px;
     width: 100px;
   }
   .pag1 .saludoydibujo div .dibujo,
@@ -475,21 +466,23 @@ h2, h3 {
     width: 344px;
     height: 318px;
     margin: 52px 68px;
-    padding: 8px;
+    padding: 4px 8px;
     margin-bottom: 6px;
   }
   .container .contactame .tituloparrafo {
-    font-size: 20px;
+    font-size: 22px;
+    margin-left: 8px;
     margin-bottom: 0px;
   }
   .container .contactame .parrafocontactame {
     margin-bottom: 0px;
     padding: 8px 80px 8px 8px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .container .contactame div div a {
-    font-size: 12px;
+    font-size: 14px;
     width: 100px;
+    margin-left: 8px;
   }
   .video iframe {
     width: 344px;
@@ -500,7 +493,7 @@ h2, h3 {
 .aboutme {
   margin-left: 68px;
   width: 344px;
-  font-size: 12px;
+  font-size: 14px;
   height: auto;
 }
 
