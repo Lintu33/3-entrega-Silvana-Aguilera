@@ -1,15 +1,10 @@
 /*INICIO HEADER*/
 /*Header*/
 /*header bootstrap*/
-nav{
+.navbar{
     background-color: map-get($colores,primario);
     margin: 0px;
     padding: 0px;
-    .navbar{
-        background-color: map-get($colores,primario);
-        margin: 0px;
-        padding: 0px;
-    }
     .container-fluid{
         background-color:map-get($colores,primario);
         padding: 0px 52px;
@@ -57,6 +52,7 @@ nav{
             }
             
         }
-    } 
+    }
 }
+
 /*FIN HEADER*/
