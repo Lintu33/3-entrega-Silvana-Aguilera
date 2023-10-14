@@ -74,9 +74,6 @@ h2, h3 {
   text-align: center;
 }
 
-/*INICIO BODY*/
-/*INICIO MAIN PAG 1 HOME*/
-/*fondo*/
 .pag1 {
   background-color: #34373a;
   /*contenedor de textos y botones*/
@@ -84,8 +81,8 @@ h2, h3 {
 }
 .pag1 .saludoydibujo {
   margin: 52px 0px;
-  flex-wrap: wrap;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 .pag1 .saludoydibujo .cajasaludo {
@@ -108,8 +105,9 @@ h2, h3 {
 }
 .pag1 .saludoydibujo .cajasaludo .botones .botoncajasaludo {
   display: flex;
-  width: 120px;
   text-align: center;
+  justify-content: center;
+  width: 120px;
   margin-right: 16px;
   /* texto botones resume y proyectos*/
 }
@@ -131,9 +129,10 @@ h2, h3 {
 }
 .pag1 .cajascualidades {
   display: flex;
+  text-align: center;
+  justify-content: space-between;
   margin-left: 52px;
   margin-bottom: 0px;
-  justify-content: space-between;
   width: 1348px;
 }
 .pag1 .cajascualidades .cualidades {
@@ -141,11 +140,8 @@ h2, h3 {
   height: 200px;
   padding: 32px;
   margin-bottom: 52px;
-  text-align: center;
   background-color: #8BE1F0;
   border-radius: 10px;
-  box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
-  justify-content: space-evenly;
 }
 .pag1 .cajascualidades .cualidades img {
   padding-bottom: 32px;

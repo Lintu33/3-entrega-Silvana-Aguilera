@@ -1,6 +1,10 @@
-@mixin flex($display,$direccion,$horizontal,$vertical){
+@mixin flex($display,$wrap,$horizontal){
     display: $display;
-    flex-direction: $direccion;
+    flex-wrap: $wrap;
     justify-content: $horizontal;
-    align-items: $vertical;
+}
+@mixin centrar($display,$centrado,$horizontal){
+    display: $display;
+    text-align: $centrado;
+    justify-content: $horizontal;
 }

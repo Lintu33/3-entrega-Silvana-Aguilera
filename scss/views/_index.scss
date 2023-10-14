@@ -1,43 +1,37 @@
-/*INICIO BODY*/
-/*INICIO MAIN PAG 1 HOME*/
-/*fondo*/
 .pag1 {
     background-color: map-get($colores, fondoindex);
     /*contenedor de textos y botones*/
     .saludoydibujo {
-        margin: 52px 0px;
-        flex-wrap: wrap;
-        display: flex;
-        justify-content: space-evenly;
+        margin:  map-get($medidas, margen-arriba)  map-get($medidas, sin-padding);
+        @include flex(flex,wrap,space-evenly);
         .cajasaludo {
-            width: 648px;
-            height: 600px;
-            border-radius: 10px;
+            width: map-get($medidas, ancho);
+            height: map-get($medidas, alto);
+            border-radius: map-get($medidas, esquinas);
             padding-top: 150px;
             /*subtitulo hello*/
             .titulohello,
             .parrafohello {
-                padding-left: 52px;
-                padding-bottom: 8px;
+                padding-left: map-get($medidas, margen-arriba);
+                padding-bottom: map-get($medidas, padding-parrafo1);
                 color: map-get($colores, texto1);
             }
             /*botones resume y proyectos*/
             .botones {
                 display: flex;
-                margin-left: 52px;
+                margin-left: map-get($medidas, margen-arriba);
                 .botoncajasaludo {
-                    display: flex;
+                    @include centrar(flex,center,center);
                     width: 120px;
-                    text-align: center;
-                    margin-right: 16px;
+                    margin-right: map-get($medidas, padding-parrafo2);
                     /* texto botones resume y proyectos*/
                     a {
-                        width: 100%;
-                        border-radius: 10px;
+                        width: map-get($medidas, ancho-completo);
+                        border-radius: map-get($medidas, esquinas);
                         background-color: map-get($colores, primario);
                         color: map-get($colores, texto1);
                         text-decoration: none;
-                        padding: 8px 16px;
+                        padding: map-get($medidas, padding-parrafo1) map-get($medidas, padding-parrafo2);
                     }
                     a:hover {
                         background-color: map-get($colores, texto1);
@@ -47,31 +41,26 @@
                 }
             }
             .dibujo img {
-                border-radius: 10px;
+                border-radius: map-get($medidas, esquinas);
                 }
-        }
-        
+        } 
     }    
-    
     /*Seccion cualidades del desarrollador*/
     .cajascualidades {
-        display: flex;
-        margin-left: 52px;
-        margin-bottom: 0px;
-        justify-content: space-between;
+        @include centrar(flex,center,space-between);
+        margin-left: map-get($medidas, margen-arriba);
+        margin-bottom: map-get($medidas, sin-padding);
         width: 1348px;
         .cualidades {
             width: 416px;
             height: 200px;
-            padding: 32px;
-            margin-bottom: 52px;
-            text-align: center;
+            padding: map-get($medidas, padding-parrafo4);
+            margin-bottom: map-get($medidas, margen-arriba);
             background-color: map-get($colores, fondocajas);
-            border-radius: 10px;
-            box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
-            justify-content: space-evenly;
+            border-radius: map-get($medidas, esquinas);
+            box-shadow: map-get($colores, sombra);
             img {
-                padding-bottom: 32px;
+                padding-bottom: map-get($medidas, padding-parrafo4);
             }
         }
     }
