@@ -1,78 +1,74 @@
 .section-title{
-    margin: 96px 52px 8px 52px
+    margin: map-get($medidas, margen-arriba) map-get($medidas, margen-arriba) 0px
 }
 .section-title h2{
-    margin-bottom: 8px;
+    margin-bottom: map-get($medidas, padding-parrafo1);
 }
 /* cuadro con los datos y mapa*/
 .datosmapa{
-    width: 100%;
-    height: 750px;
-    padding: 0px 52px;
-    margin-bottom: 104px;
+    width: map-get($medidas, ancho-completo);
+    height: map-get($medidas, alto2);
+    padding: map-get($medidas, sin-padding) map-get($medidas, margen-arriba);
+    margin-bottom: map-get($medidas, margen-inferior);
     grid-area: datosmapa;
     .info{
-        padding: 32px;
-        background: #fff;
-        width: 100%;
-        height: 750px;
-        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+        padding: map-get($medidas, padding-parrafo4);
+        background: map-get($colores, fondoformulario);
+        border-radius: map-get($medidas, esquinas);
+        width: map-get($medidas, ancho-completo);
+        height: map-get($medidas, alto2);
+        box-shadow: map-get($medidas, sombraformulario);
         /* cuadro con formulario */
         img{
-            font-size: 20px;
-            color: #149ddd;
+            font-size: map-get($tamanios, h2);
             float: left;
-            width: 64px;
-            height: 64px;
-            background: #dff3fc;
+            width: map-get($medidas, img);
+            height: map-get($medidas, img);
+            background: map-get($colores, fondocajas);
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 8px;
-            border-radius: 8px;
-            margin-right: 8px;
+            padding: map-get($medidas, padding-parrafo1);
+            border-radius: map-get($medidas,esquinas);
+            margin-right: map-get($medidas, padding-parrafo1);
             transition: all 0.3s ease-in-out;
             }
             .address,
             .email,
             .phone{
-                padding-bottom: 32px;
+                padding-bottom: map-get($medidas, padding-parrafo4);
             }
             h4{
-                padding: 0 0 0 60px;
-                font-size: 22px;
-                font-weight: 600;
-                margin-bottom: 5px;
-                color: #050d18;
+                font-size: map-get($tamanios, h1);
+                font-weight: map-get($medidas,alto);
+                padding-top: 4px;   
             }
             p {
-                padding: 0 0 10px 60px;
-                margin-bottom: 20px;
-                font-size: 14px;
-                color: #173b6c;    
+                padding: 0 0 map-get($medidas, padding-parrafo1) map-get($medidas,margen-arriba);
+                margin-bottom: map-get($medidas, padding-parrafo2);
+                font-size: map-get($tamanios, h3); 
             }
         }   
     }
 .datosformulario{
-    margin-right: 52px;
+    margin-right: map-get($medidas, margen-arriba);
     .enviarmensaje{
-        width: 100%;
-        height: 750px;
-        padding: 32px;
-        margin-right: 52px;
-        margin-bottom: 104px;
-        /* background: #f2f2f2; */
-        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); 
+        width: map-get($medidas, ancho-completo);
+        height: map-get($medidas, alto2);
+        padding: map-get($medidas, padding-parrafo4);
+        margin-right: map-get($medidas,margen-arriba);
+        border-radius: map-get($medidas, esquinas);
+        box-shadow: map-get($medidas,sombraformulario); 
         .container{
-            border-radius: 5px;
+            border-radius: map-get($medidas, esquinas);
             input[type=text], select, textarea {
-                width: 100%;
+                width: map-get($medidas, ancho-completo);
                 padding: 12px; 
                 border: 1px solid #ccc;
-                border-radius: 4px;
+                border-radius: map-get($medidas,esquinas);
                 box-sizing: border-box;
                 margin-top: 6px;
-                margin-bottom: 16px;
+                margin-bottom: map-get($medidas,padding-parrafo2);
                 resize: vertical
             }
             #subject{
@@ -80,23 +76,24 @@
                 margin-bottom: 4px;
             }
             input[type=submit] {
-                background-color: #605278;
-                color: white;
-                padding: 12px 20px;
-                margin-top: 16px;
+                background-color: map-get($colores,primario);
+                color: map-get($colores,fondoformulario);
+                padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
+                margin-top: 20px;
                 border: none;
-                border-radius: 10px;
+                border-radius: map-get($medidas, esquinas);
                 cursor: pointer;
             }
             input[type=submit]:hover {
-                background-color: #45a049;
+                background-color: map-get($colores,fondocajas);
+                color: map-get($colores,primario);
             }
         }
     }
 }
 .grid{
     display: grid;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 20% 80%;
     grid-template-columns: 4fr 5fr;
     grid-template-areas: 
     "contacttexto contacttexto"
