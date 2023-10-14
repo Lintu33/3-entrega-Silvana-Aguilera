@@ -1,4 +1,4 @@
-.pag1 {
+.pag1{
     background-color: map-get($colores, fondoindex);
     /*contenedor de textos y botones*/
     .saludoydibujo {
@@ -15,7 +15,7 @@
                 padding-left: map-get($medidas, margen-arriba);
                 padding-bottom: map-get($medidas, padding-parrafo1);
                 color: map-get($colores, texto1);
-            }
+                }
             /*botones resume y proyectos*/
             .botones {
                 display: flex;

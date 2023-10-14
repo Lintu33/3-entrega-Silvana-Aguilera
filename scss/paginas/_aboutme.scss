@@ -37,9 +37,11 @@
         }
 }
 .cajaaboutme{
-    margin: map-get($medidas,margen-arriba) 0px;
+    margin-top: map-get($medidas,margen-arriba);
+    margin-bottom: map-get($medidas,margen-arriba);
     .aboutme{
         text-align: center;
+        margin: map-get($medidas,sin-padding) ;
         height: auto;
         padding: map-get($medidas,padding-parrafo2);
         background-color: #8BE1F0;

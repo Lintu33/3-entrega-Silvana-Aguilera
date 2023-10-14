@@ -20,7 +20,7 @@
         box-shadow: map-get($medidas, sombraformulario);
         /* cuadro con formulario */
         img{
-            font-size: map-get($tamanios, h2);
+            font-size: map-get($tamanios, h5);
             float: left;
             width: map-get($medidas, img);
             height: map-get($medidas, img);
@@ -39,14 +39,14 @@
                 padding-bottom: map-get($medidas, padding-parrafo4);
             }
             h4{
-                font-size: map-get($tamanios, h1);
+                font-size: map-get($tamanios, h2);
                 font-weight: map-get($medidas,alto);
                 padding-top: 4px;   
             }
             p {
                 padding: 0 0 map-get($medidas, padding-parrafo1) map-get($medidas,margen-arriba);
                 margin-bottom: map-get($medidas, padding-parrafo2);
-                font-size: map-get($tamanios, h3); 
+                font-size: map-get($tamanios, h4); 
             }
         }   
     }

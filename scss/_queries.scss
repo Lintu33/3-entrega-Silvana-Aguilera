@@ -5,16 +5,16 @@
     .navbar{
         .container-fluid{
             .navbar-brand {
-                font-size: map-get($tamanios,h1);
+                font-size: map-get($tamanios,h2);
             }
             .navbar-toggler{
-                background-color: map-get($colores , texto1 );
+                background-color: map-get($colores, texto1 );
             }
             .collapse{
                 .navbar-nav{
                     .nav-link{
-                        background-color:map-get($colores , texto1 );
-                        color:map-get($colores ,primario ) ;
+                        background-color:map-get($colores, texto1 );
+                        color:map-get($colores, primario ) ;
                         border-radius: 0px; 
                     }
                     .active{
@@ -24,105 +24,110 @@
                     }
                 }
             }
-        } 
-    }
-    /*INICIO MAIN*/
-    /*bloque izquierdo*/
-    /*Seccion para link de resume y proyectos-->*/
-.pag1 {
-    .saludoydibujo{
-        margin-bottom: map-get($medidas, queries-margin);
-        .cajasaludo{
-            width: map-get($medidas, queries-ancho);
-            height: map-get($medidas, queries-alto);
-            padding-top: 78px;
-            /*subtitulo hello*/
-            .titulohello {
+        }
+    }    
+    .pag1 {
+        .saludoydibujo{
+            margin-bottom: map-get($medidas, queries-margin);
+            .cajasaludo{
+                width: map-get($medidas, queries-ancho);
+                height: map-get($medidas, queries-alto);
+                padding-top: 78px;
+                /*subtitulo hello*/
+                .titulohello {
+                    font-size: map-get($tamanios, h4);
+                    }  
+                .parrafohello{
                 font-size: map-get($tamanios, h3);
-            }  
-            .parrafohello{
-                font-size: map-get($tamanios, h2);
+                    }
+                .botoncajasaludo{
+                    font-size: map-get($tamanios, h5);
+                    width: map-get($medidas, queries-boton);
+                    } 
+                }
+            /*Seccion cualidades del desarrollador (con imagen)*/
+            div .dibujo, 
+            .dibujo img{
+                width: map-get($medidas, queries-ancho);
+                height: map-get($medidas, queries-alto);
+                margin-top: map-get($medidas, queries-margin);
+                }    
             }
-            .botoncajasaludo{
-                font-size: map-get($tamanios, h4);
-                width: map-get($medidas, queries-boton);
-            } 
+            /*Seccion cualidades en cajas*/
+        .cajascualidades{
+            flex-direction: column;
+            margin-left: map-get($medidas, queries-marginleft);
+            .cualidades{
+                margin: map-get($medidas, queries-margincualidades) 0px;
+                padding: map-get($medidas, queries-padding-cualidades);
+                width: map-get($medidas, queries-ancho);
+                height: map-get($medidas, queries-altocualidades);
+                img{
+                padding: 13px;
+                }
+                } 
+                .cualidades:nth-child(3){
+                    margin-bottom: map-get($medidas, margen-arriba);
+                } 
+            }
         }
-        /*Seccion cualidades del desarrollador (con imagen)*/
-        div .dibujo, 
-        .dibujo img{
+        /* FIN PAG 1 "HOME"*/
+        /*INICIO PAG 2 "ABOUT ME"*/
+    .container{
+        .contactame{
             width: map-get($medidas, queries-ancho);
             height: map-get($medidas, queries-alto);
-            margin-top: map-get($medidas, queries-margin);
-        }    
-    }
-    /*Seccion cualidades en cajas*/
-    .cajascualidades{
-        flex-direction: column;
-            margin-left: map-get($medidas, queries-marginleft);
-        .cualidades{
-            margin: map-get($medidas, queries-margincualidades) 0px;
-            padding: map-get($medidas, queries-padding-cualidades);
-            width: map-get($medidas, queries-ancho);
-            height: map-get($medidas, queries-altocualidades);
-            img{
-            padding: 13px;
-        }
-        } 
-        .cualidades:nth-child(3){
-            margin-bottom: map-get($medidas, margen-arriba);
-        } 
-    }
-}
-/* FIN PAG 1 "HOME"*/
-/*INICIO PAG 2 "ABOUT ME"*/
-.container{
-    .contactame{
-        width: map-get($medidas, queries-ancho);
-        height: map-get($medidas, queries-alto);
-        margin: map-get($medidas,margen-arriba) map-get($medidas, queries-marginleft);
-        padding: map-get($medidas,queries-parrafo1) map-get($medidas,padding-parrafo1);
-        margin-bottom: 6px;
-        .tituloparrafo{
-            font-size:map-get($tamanios, h2);
-            margin-left: map-get($medidas,padding-parrafo1);
-            margin-bottom: map-get($medidas,sin-padding);
-        }
-        .parrafocontactame{
-            margin-bottom: 0px ;
-            padding: map-get($medidas,padding-parrafo1) 80px map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo1);
-            font-size: map-get($tamanios, h4);
+            margin: map-get($medidas,margen-arriba) map-get($medidas, queries-marginleft);
+            padding: map-get($medidas,queries-parrafo1) map-get($medidas,padding-parrafo1);
+            margin-bottom: 6px;
+            .tituloparrafo{
+                font-size:map-get($tamanios, h4);
+                margin-left: map-get($medidas,padding-parrafo1);
+                margin-bottom: map-get($medidas,sin-padding);
+                }
+            .parrafocontactame{
+                margin-bottom: 0px ;
+                padding: map-get($medidas,padding-parrafo1) 80px map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo1);
+                font-size: map-get($tamanios, h6);
+                }
+                div div a{
+                    font-size: map-get($tamanios, h5);
+                    width: map-get($medidas, queries-boton);
+                    margin-left: map-get($medidas,padding-parrafo1);
+                } 
             }
-        div div a{
-            font-size: map-get($tamanios, h4);
-            width: map-get($medidas, queries-boton);
-            margin-left: map-get($medidas,padding-parrafo1);
-        } 
+        .video iframe{
+            width: map-get($medidas, queries-ancho);
+            height: map-get($medidas, queries-alto);
+            margin: map-get($medidas, margen-arriba) map-get($medidas, queries-marginleft) 0px;  
+            }
         }
-    }
-    .video iframe{
-        width: map-get($medidas, queries-ancho);
-        height: map-get($medidas, queries-alto);
-        margin: map-get($medidas, sin-padding)   map-get($medidas, queries-marginleft)
-    }
-}
-.aboutme{
-    margin-left:  map-get($medidas, queries-marginleft);
-    width: map-get($medidas, queries-ancho);
-    font-size: map-get($tamanios, h4);
-    height: auto;
-    }
-    /*PAG 5 "CONTACT"*/
+        .cajaaboutme{
+            margin: map-get($medidas,margen-arriba) map-get($medidas,queries-marginleft);
+            width: map-get($medidas, queries-ancho);
+            font-size: map-get($tamanios, h5);
+            height: auto;
+            .aboutme{
+                h2{
+                    font-size: map-get($tamanios, h3);
+                } 
+                h4{
+                    font-size: map-get($tamanios, h4); 
+                }
+            }  
+               
+        }
+    
+            /*PAG 5 "CONTACT"*/
     .grid{
-        grid-template-rows: 20% 40% 40%;
+        grid-template-rows: 16% 42% 42%;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "contacttexto"
         "datosmapa"
         "datosformulario ";
-    }
-    .datosformulario{
-        margin-left: 52px;
-    } 
-    /*FIN 5 "CONTACT"*/
-
+        }
+        .datosformulario{
+            margin-left: 52px;
+        } 
+}       /*FIN 5 "CONTACT"*/        

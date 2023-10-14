@@ -8,7 +8,7 @@
         height: 104px;
         margin: map-get($medidas,sin-padding);
         img{
-            padding-right: map-get($medidas, sin-padding);
+            padding-right: map-get($medidas, padding-parrafo1);
         }
         /*marca*/
         .navbar-brand{

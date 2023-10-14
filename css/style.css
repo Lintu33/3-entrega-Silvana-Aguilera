@@ -32,7 +32,7 @@ h2, h3 {
   /*marca*/
 }
 .navbar .container-fluid img {
-  padding-right: 0px;
+  padding-right: 8px;
 }
 .navbar .container-fluid .navbar-brand {
   color: #cbb9eb;
@@ -186,10 +186,12 @@ h2, h3 {
 }
 
 .cajaaboutme {
-  margin: 52px 0px;
+  margin-top: 52px;
+  margin-bottom: 52px;
 }
 .cajaaboutme .aboutme {
   text-align: center;
+  margin: 0px;
   height: auto;
   padding: 16px;
   background-color: #8BE1F0;
@@ -214,7 +216,6 @@ h2, h3 {
 }
 
 /*FIN MAIN PAG 3 "RESUME"*/
-/*INICIO MAIN PAG 4 "PROJECTS"*/
 .row {
   justify-content: center;
 }
@@ -291,7 +292,7 @@ h2, h3 {
   /* cuadro con formulario */
 }
 .datosmapa .info img {
-  font-size: 22px;
+  font-size: 14px;
   float: left;
   width: 64px;
   height: 64px;
@@ -310,14 +311,14 @@ h2, h3 {
   padding-bottom: 32px;
 }
 .datosmapa .info h4 {
-  font-size: 40px;
+  font-size: 22px;
   font-weight: 600px;
   padding-top: 4px;
 }
 .datosmapa .info p {
   padding: 0 0 8px 52px;
   margin-bottom: 16px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .datosformulario {
@@ -393,7 +394,7 @@ h2, h3 {
   /*PAG 1 "HOME"*/
   /*Nav bar*/
   .navbar .container-fluid .navbar-brand {
-    font-size: 40px;
+    font-size: 22px;
   }
   .navbar .container-fluid .navbar-toggler {
     background-color: #f3f3f3;
@@ -408,9 +409,6 @@ h2, h3 {
     border: 1px solid #8BE1F0;
     box-shadow: 0 0 16px 1px #8BE1F0;
   }
-  /*INICIO MAIN*/
-  /*bloque izquierdo*/
-  /*Seccion para link de resume y proyectos-->*/
   .pag1 {
     /*Seccion cualidades en cajas*/
   }
@@ -425,10 +423,10 @@ h2, h3 {
     /*subtitulo hello*/
   }
   .pag1 .saludoydibujo .cajasaludo .titulohello {
-    font-size: 20px;
+    font-size: 18px;
   }
   .pag1 .saludoydibujo .cajasaludo .parrafohello {
-    font-size: 22px;
+    font-size: 20px;
   }
   .pag1 .saludoydibujo .cajasaludo .botoncajasaludo {
     font-size: 14px;
@@ -466,44 +464,46 @@ h2, h3 {
     margin-bottom: 6px;
   }
   .container .contactame .tituloparrafo {
-    font-size: 22px;
+    font-size: 18px;
     margin-left: 8px;
     margin-bottom: 0px;
   }
   .container .contactame .parrafocontactame {
     margin-bottom: 0px;
     padding: 8px 80px 8px 8px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .container .contactame div div a {
     font-size: 14px;
     width: 100px;
     margin-left: 8px;
   }
-  .video iframe {
+  .container .video iframe {
     width: 344px;
     height: 318px;
-    margin: 0px 68px;
+    margin: 52px 68px 0px;
   }
-}
-.aboutme {
-  margin-left: 68px;
-  width: 344px;
-  font-size: 14px;
-  height: auto;
-}
-
-/*PAG 5 "CONTACT"*/
-.grid {
-  grid-template-rows: 20% 40% 40%;
-  grid-template-columns: 1fr;
-  grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
-}
-
-.datosformulario {
-  margin-left: 52px;
-}
-
-/*FIN 5 "CONTACT"*/
+  .cajaaboutme {
+    margin: 52px 68px;
+    width: 344px;
+    font-size: 14px;
+    height: auto;
+  }
+  .cajaaboutme .aboutme h2 {
+    font-size: 20px;
+  }
+  .cajaaboutme .aboutme h4 {
+    font-size: 18px;
+  }
+  /*PAG 5 "CONTACT"*/
+  .grid {
+    grid-template-rows: 16% 42% 42%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
+  }
+  .datosformulario {
+    margin-left: 52px;
+  }
+} /*FIN 5 "CONTACT"*/
 
 /*# sourceMappingURL=style.css.map */
