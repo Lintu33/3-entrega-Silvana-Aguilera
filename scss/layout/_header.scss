@@ -42,8 +42,13 @@
                     color: map-get($colores,primario);
                     border-radius: 10px;
                     border: 1px solid map-get($colores,texto1);
-                    box-shadow: 0 0 26px 1px map-get($colores,texto1);
+                    box-shadow: 0 0 16px 1px map-get($colores,texto1);
+                    a:hover{
+                        color: map-get($colores,primario);
+                    }
                 }
+                
+                
                 /*Botones Nav bar*/
                 .nav-link{
                 width: 110px;

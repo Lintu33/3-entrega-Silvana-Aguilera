@@ -46,11 +46,13 @@
                     }
                 }
             }
+            .dibujo img {
+                border-radius: 10px;
+                }
         }
+        
     }    
-    .dibujo img {
-        border-radius: 10px;
-        }
+    
     /*Seccion cualidades del desarrollador*/
     .cajascualidades {
         display: flex;
