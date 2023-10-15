@@ -206,17 +206,10 @@ h2, h3 {
   padding: 2px;
 }
 
-/*INICIO MAIN PAG 3 "RESUME"*/
-.cv {
-  padding: 104px 52px 16px;
+.resume .container .section-title {
+  margin: 52px 0px;
 }
 
-.seccioncv {
-  margin: 16px 80px;
-  align-items: center;
-}
-
-/*FIN MAIN PAG 3 "RESUME"*/
 .row {
   justify-content: center;
 }
