@@ -491,6 +491,11 @@ h2, h3 {
     font-size: 18px;
   }
   /*FIN PAG 2 "ABOUT ME"*/
+  /*INICIO PAG 3 "RESUME"*/
+  .resume {
+    margin: 0px 52px;
+  }
+  /*FIN PAG 3 "RESUME"*/
   /*INICIO PAG 4 "PROJECTS"*/
   .row .col-9 {
     width: 85%;
