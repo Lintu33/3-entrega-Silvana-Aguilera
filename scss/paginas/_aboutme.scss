@@ -1,6 +1,6 @@
 /*seccion info. desarrollador*/
 .container{
-    padding: 0px;
+    padding: map-get($medidas,sin-padding);
     .contactame{
         width: map-get($medidas,ancho);
         height: map-get($medidas,alto);
@@ -8,15 +8,16 @@
         margin-top:map-get($medidas,margen-arriba);
         background-image: url("../img/fondo\ main.png");
         @extend.background; 
-        padding: 24px 260px 24px 24px;
+        padding: map-get($medidas,padding-parrafo3) 280px map-get($medidas,padding-parrafo3) map-get($medidas,padding-parrafo3);
         border-radius:map-get($medidas,esquinas);
         box-shadow:map-get($medidas,sombra); 
         .parrafocontactame{
             padding-top: map-get($medidas,padding-parrafo3);
             padding-bottom: map-get($medidas,padding-parrafo3);
+            font-size: map-get($tamanios,h4);
         }
         div a {
-            width: 100%;
+            width: map-get($medidas, ancho-completo);
             border-radius: map-get($medidas,esquinas);
             background-color: map-get($colores, primario);
             color: map-get($colores, texto1);
@@ -44,7 +45,7 @@
         margin: map-get($medidas,sin-padding) ;
         height: auto;
         padding: map-get($medidas,padding-parrafo2);
-        background-color: #8BE1F0;
+        background-color: map-get($colores, fondocajas);
         border-radius: map-get($medidas,esquinas);
         box-shadow: map-get($medidas,sombra);
         .redessociales{

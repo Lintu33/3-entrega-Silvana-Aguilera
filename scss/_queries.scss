@@ -26,7 +26,7 @@
             }
         }
     }    
-    .pag1 {
+    .pag1{
         .saludoydibujo{
             margin-bottom: map-get($medidas, queries-margin);
             .cajasaludo{
@@ -62,15 +62,15 @@
                 padding: map-get($medidas, queries-padding-cualidades);
                 width: map-get($medidas, queries-ancho);
                 height: map-get($medidas, queries-altocualidades);
-                img{
-                padding: 13px;
-                }
-                } 
                 .cualidades:nth-child(3){
                     margin-bottom: map-get($medidas, margen-arriba);
                 } 
-            }
+                img{
+                padding: 13px;
+                }
+            } 
         }
+    }
         /* FIN PAG 1 "HOME"*/
         /*INICIO PAG 2 "ABOUT ME"*/
     .container{
@@ -115,10 +115,35 @@
                     font-size: map-get($tamanios, h4); 
                 }
             }  
-               
         }
-    
-            /*PAG 5 "CONTACT"*/
+        /*FIN PAG 2 "ABOUT ME"*/
+        /*INICIO PAG 4 "PROJECTS"*/
+        .row{
+            .col-9{
+                width: 85%;
+                padding: map-get($medidas, sin-padding);
+                .carousel-inner{
+                    padding-top: map-get($medidas, margen-arriba);
+                    height: 290px;
+                    .carousel-control-next,
+                    .carousel-control-prev{
+                    margin-top: map-get($medidas, padding-parrafo1);
+                    }
+                    img{
+                        padding-left:46px;
+                        width: 384px;
+                        height: 200px;
+                    }
+                    .carousel-caption{
+                        margin-bottom: 185px; 
+                    }
+                }
+            }
+        }
+            
+        /*FIN PAG 4 "PROJECTS"*/
+
+        /*PAG 5 "CONTACT"*/
     .grid{
         grid-template-rows: 16% 42% 42%;
         grid-template-columns: 1fr;

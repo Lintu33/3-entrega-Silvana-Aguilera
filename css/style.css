@@ -158,13 +158,14 @@ h2, h3 {
   padding-top: 8px;
   margin-top: 52px;
   background-image: url("../img/fondo main.png");
-  padding: 24px 260px 24px 24px;
+  padding: 24px 280px 24px 24px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
 }
 .container .contactame .parrafocontactame {
   padding-top: 24px;
   padding-bottom: 24px;
+  font-size: 18px;
 }
 .container .contactame div a {
   width: 100%;
@@ -226,7 +227,6 @@ h2, h3 {
 .row .carousel-inner .carousel-control-next,
 .row .carousel-inner .carousel-control-prev {
   margin-top: 160px;
-  height: 320px;
 }
 .row .carousel-inner img {
   padding-left: 195px;
@@ -239,17 +239,19 @@ h2, h3 {
   margin: 52px;
 }
 .trabajemos .contacto {
+  display: flex;
   text-align: center;
-  align-items: center;
   justify-content: space-evenly;
-  width: 1344px;
-  height: 280px;
+  height: auto;
   padding: 16px;
   background-color: #8BE1F0;
   border-radius: 10px;
 }
 .trabajemos .contacto .trabajemosjuntos {
   padding: 4px;
+}
+.trabajemos .contacto .botoncontact {
+  margin: 8px;
 }
 .trabajemos .contacto .botoncontact a {
   margin: 8px;
@@ -448,11 +450,11 @@ h2, h3 {
     width: 344px;
     height: 165px;
   }
+  .pag1 .cajascualidades .cualidades .cualidades:nth-child(3) {
+    margin-bottom: 52px;
+  }
   .pag1 .cajascualidades .cualidades img {
     padding: 13px;
-  }
-  .pag1 .cajascualidades .cualidades:nth-child(3) {
-    margin-bottom: 52px;
   }
   /* FIN PAG 1 "HOME"*/
   /*INICIO PAG 2 "ABOUT ME"*/
@@ -495,6 +497,29 @@ h2, h3 {
   .cajaaboutme .aboutme h4 {
     font-size: 18px;
   }
+  /*FIN PAG 2 "ABOUT ME"*/
+  /*INICIO PAG 4 "PROJECTS"*/
+  .row .col-9 {
+    width: 85%;
+    padding: 0px;
+  }
+  .row .col-9 .carousel-inner {
+    padding-top: 52px;
+    height: 290px;
+  }
+  .row .col-9 .carousel-inner .carousel-control-next,
+  .row .col-9 .carousel-inner .carousel-control-prev {
+    margin-top: 8px;
+  }
+  .row .col-9 .carousel-inner img {
+    padding-left: 46px;
+    width: 384px;
+    height: 200px;
+  }
+  .row .col-9 .carousel-inner .carousel-caption {
+    margin-bottom: 185px;
+  }
+  /*FIN PAG 4 "PROJECTS"*/
   /*PAG 5 "CONTACT"*/
   .grid {
     grid-template-rows: 16% 42% 42%;
