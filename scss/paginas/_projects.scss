@@ -1,48 +1,53 @@
-.row{
-    justify-content: center;
-    .carousel-inner{
-        padding-top: 156px;
-        height: 508px;
-        .carousel-control-next,
-        .carousel-control-prev{
-        margin-top: 160px;
-        }
-        img{
-            padding-left: 195px;
-        }
-        .carousel-caption p{
-            margin-bottom: 285px;
-        }
-    }
-}
-.trabajemos{
-    margin: map-get($medidas,margen-arriba);
-    .contacto{
-        @include centrar(flex,center,space-evenly);
-        height: auto;
-        padding: map-get($medidas,padding-parrafo2);
-        background-color: map-get($colores, fondocajas);
-        @extend.background; 
-        border-radius: map-get($medidas,esquinas);
-        .trabajemosjuntos{
-            padding: 4px;
-        }
-        .botoncontact{
-            margin: map-get($medidas,padding-parrafo1);
-            a{
-                margin: map-get($medidas, padding-parrafo1);
-                width: map-get($medidas, ancho-completo);
-                border-radius: map-get($medidas,esquinas);
-                background-color: map-get($colores, primario);
-                color: map-get($colores, texto1);
-                text-decoration: none;
-                padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
+.body-projects{    
+    background: linear-gradient(map-get($colores, fondocajas),map-get($colores, primario)) ;
+    .row{
+   
+        justify-content: center;
+        .carousel-inner{
+            padding-top: 156px;
+            height: 508px;
+            .carousel-control-next,
+            .carousel-control-prev{
+            margin-top: 160px;
             }
-        }    
-        .botoncontact a:hover {
-            background-color: map-get($colores, texto1);
-            border: 2px solid map-get($colores, primario);
-            color: map-get($colores, primario);
+            img{
+                padding-left: 195px;
+            }
+            .carousel-caption p{
+                margin-bottom: 285px;
+            }
         }
     }
+    .trabajemos{
+        margin: map-get($medidas,margen-arriba);
+        .contacto{
+            @include centrar(flex,center,space-evenly);
+            height: auto;
+            padding: map-get($medidas,padding-parrafo2);
+            background-color: map-get($colores, fondocajas);
+            @extend.background; 
+            border-radius: map-get($medidas,esquinas);
+            .trabajemosjuntos{
+                padding: 4px;
+            }
+            .botoncontact{
+                margin: map-get($medidas,padding-parrafo1);
+                a{
+                    margin: map-get($medidas, padding-parrafo1);
+                    width: map-get($medidas, ancho-completo);
+                    border-radius: map-get($medidas,esquinas);
+                    background-color: map-get($colores, primario);
+                    color: map-get($colores, texto1);
+                    text-decoration: none;
+                    padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
+                }
+            }    
+            .botoncontact a:hover {
+                background-color: map-get($colores, texto1);
+                border: 2px solid map-get($colores, primario);
+                color: map-get($colores, primario);
+            }
+        }
+    }
+
 }

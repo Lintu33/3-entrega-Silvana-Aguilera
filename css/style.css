@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.background, .trabajemos .contacto, .container .contactame {
+.background, .body-projects .trabajemos .contacto, .container .contactame {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -75,7 +75,7 @@ h2, h3 {
 }
 
 .pag1 {
-  background-color: #34373a;
+  background: linear-gradient(#34373a, #392c50);
   /*contenedor de textos y botones*/
   /*Seccion cualidades del desarrollador*/
 }
@@ -210,28 +210,30 @@ h2, h3 {
   margin: 52px 0px;
 }
 
-.row {
+.body-projects {
+  background: linear-gradient(#8BE1F0, #392c50);
+}
+.body-projects .row {
   justify-content: center;
 }
-.row .carousel-inner {
+.body-projects .row .carousel-inner {
   padding-top: 156px;
   height: 508px;
 }
-.row .carousel-inner .carousel-control-next,
-.row .carousel-inner .carousel-control-prev {
+.body-projects .row .carousel-inner .carousel-control-next,
+.body-projects .row .carousel-inner .carousel-control-prev {
   margin-top: 160px;
 }
-.row .carousel-inner img {
+.body-projects .row .carousel-inner img {
   padding-left: 195px;
 }
-.row .carousel-inner .carousel-caption p {
+.body-projects .row .carousel-inner .carousel-caption p {
   margin-bottom: 285px;
 }
-
-.trabajemos {
+.body-projects .trabajemos {
   margin: 52px;
 }
-.trabajemos .contacto {
+.body-projects .trabajemos .contacto {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
@@ -240,13 +242,13 @@ h2, h3 {
   background-color: #8BE1F0;
   border-radius: 10px;
 }
-.trabajemos .contacto .trabajemosjuntos {
+.body-projects .trabajemos .contacto .trabajemosjuntos {
   padding: 4px;
 }
-.trabajemos .contacto .botoncontact {
+.body-projects .trabajemos .contacto .botoncontact {
   margin: 8px;
 }
-.trabajemos .contacto .botoncontact a {
+.body-projects .trabajemos .contacto .botoncontact a {
   margin: 8px;
   width: 100%;
   border-radius: 10px;
@@ -255,7 +257,7 @@ h2, h3 {
   text-decoration: none;
   padding: 8px 16px;
 }
-.trabajemos .contacto .botoncontact a:hover {
+.body-projects .trabajemos .contacto .botoncontact a:hover {
   background-color: #f3f3f3;
   border: 2px solid #392c50;
   color: #392c50;

@@ -11,6 +11,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <!--ANIMATE CSS-->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--AOS CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Link para trabajar CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <!--icono para el navegador-->
@@ -49,7 +57,7 @@
                 <div class="cajasaludo">
                     <div>
                         <h3 class="titulohello">Hello! I'm Luis Patricio</h3>
-                        <h2 class="parrafohello">SENIOR BACKEND ENGINEER</h2>
+                        <h2 class=" animate__animated animate__slideInLeft parrafohello">SENIOR BACKEND ENGINEER</h2>
                     </div>
                     <div class="botones">
                         <div class="botoncajasaludo">
@@ -63,7 +71,7 @@
                 <!--bloque derecho-->
                 <!--Seccion cualidades del desarrollador (con imagen)-->
                 <div class="dibujo">
-                    <img src="./img/imagen programador.png" alt="dibujo aludiendo al desarrollador">
+                    <img data-aos="zoom-in-right" src="./img/imagen programador.png" alt="dibujo aludiendo al desarrollador">
                 </div>
             </div>
         </section>
@@ -105,5 +113,8 @@
         </footer>
     </footer> 
     <!--FIN FOOTER-->
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
