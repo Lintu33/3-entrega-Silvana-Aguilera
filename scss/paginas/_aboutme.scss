@@ -1,58 +1,61 @@
 /*seccion info. desarrollador*/
-.container{
-    padding: map-get($medidas,sin-padding);
-    .contactame{
-        width: map-get($medidas,ancho);
-        height: map-get($medidas,alto);
-        padding-top: map-get($medidas,padding-parrafo1);
-        margin-top:map-get($medidas,margen-arriba);
-        background-image: url("../img/fondo\ main.png");
-        @extend.background; 
-        padding: map-get($medidas,padding-parrafo3) 280px map-get($medidas,padding-parrafo3) map-get($medidas,padding-parrafo3);
-        border-radius:map-get($medidas,esquinas);
-        box-shadow:map-get($medidas,sombra); 
-        .parrafocontactame{
-            padding-top: map-get($medidas,padding-parrafo3);
-            padding-bottom: map-get($medidas,padding-parrafo3);
-            font-size: map-get($tamanios,h4);
+main{
+    .container{
+        padding: map-get($medidas,sin-padding);
+        .contactame{
+            width: map-get($medidas,ancho);
+            height: map-get($medidas,alto);
+            padding-top: map-get($medidas,padding-parrafo1);
+            margin-top:map-get($medidas,margen-arriba);
+            background-image: url("../img/fondo\ main.png");
+            @extend.background; 
+            padding: map-get($medidas,padding-parrafo3) 280px map-get($medidas,padding-parrafo3) map-get($medidas,padding-parrafo3);
+            border-radius:map-get($medidas,esquinas);
+            box-shadow:map-get($medidas,sombra); 
+            .parrafocontactame{
+                padding-top: map-get($medidas,padding-parrafo3);
+                padding-bottom: map-get($medidas,padding-parrafo3);
+                font-size: map-get($tamanios,h4);
+            }
+            div a {
+                width: map-get($medidas, ancho-completo);
+                border-radius: map-get($medidas,esquinas);
+                background-color: map-get($colores, primario);
+                color: map-get($colores, texto1);
+                text-decoration: none;
+                padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
+            }
+            div a:hover {
+                background-color: map-get($colores, texto1);
+                border: 2px solid map-get($colores, primario);
+                color: map-get($colores, primario);
+            }    
         }
-        div a {
-            width: map-get($medidas, ancho-completo);
+        /*Seccion info. del desarrollador video*/
+        .video iframe{
+            margin-top: map-get($medidas,margen-arriba);
             border-radius: map-get($medidas,esquinas);
-            background-color: map-get($colores, primario);
-            color: map-get($colores, texto1);
-            text-decoration: none;
-            padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
-        }
-        div a:hover {
-            background-color: map-get($colores, texto1);
-            border: 2px solid map-get($colores, primario);
-            color: map-get($colores, primario);
-        }    
+            box-shadow: map-get($medidas,sombra);
+            }
     }
-    /*Seccion info. del desarrollador video*/
-    .video iframe{
+    .cajaaboutme{
         margin-top: map-get($medidas,margen-arriba);
-        border-radius: map-get($medidas,esquinas);
-        box-shadow: map-get($medidas,sombra);
-        }
-}
-.cajaaboutme{
-    margin-top: map-get($medidas,margen-arriba);
-    margin-bottom: map-get($medidas,margen-arriba);
-    .aboutme{
-        text-align: center;
-        margin: map-get($medidas,sin-padding) ;
-        height: auto;
-        padding: map-get($medidas,padding-parrafo2);
-        background-color: map-get($colores, fondocajas);
-        border-radius: map-get($medidas,esquinas);
-        box-shadow: map-get($medidas,sombra);
-        .redessociales{
+        margin-bottom: map-get($medidas,margen-arriba);
+        .aboutme{
+            text-align: center;
+            margin: map-get($medidas,sin-padding) ;
+            height: auto;
+            padding: map-get($medidas,padding-parrafo2);
+            background-color: map-get($colores, fondocajas);
             border-radius: map-get($medidas,esquinas);
-        }
-        div{
-            padding: 2px; 
+            box-shadow: map-get($medidas,sombra);
+            .redessociales{
+                border-radius: map-get($medidas,esquinas);
+            }
+            div{
+                padding: 2px; 
+            }
         }
     }
+
 }

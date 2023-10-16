@@ -1,9 +1,11 @@
-.resume{
-    .container{
-        .section-title{
-            margin: map-get($medidas,margen-arriba) 0px ;
+main{
+    .resume{
+        .container{
+            .section-title{
+                margin: map-get($medidas,margen-arriba) 0px ;
+                }
             }
         }
-    }
+}
     
 

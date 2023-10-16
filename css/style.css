@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.background, .body-projects .trabajemos .contacto, .container .contactame {
+.background, .body-projects main .trabajemos .contacto, main .container .contactame {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,11 +148,11 @@ h2, h3 {
 }
 
 /*seccion info. desarrollador*/
-.container {
+main .container {
   padding: 0px;
   /*Seccion info. del desarrollador video*/
 }
-.container .contactame {
+main .container .contactame {
   width: 648px;
   height: 600px;
   padding-top: 8px;
@@ -162,12 +162,12 @@ h2, h3 {
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
 }
-.container .contactame .parrafocontactame {
+main .container .contactame .parrafocontactame {
   padding-top: 24px;
   padding-bottom: 24px;
   font-size: 18px;
 }
-.container .contactame div a {
+main .container .contactame div a {
   width: 100%;
   border-radius: 10px;
   background-color: #392c50;
@@ -175,22 +175,21 @@ h2, h3 {
   text-decoration: none;
   padding: 8px 16px;
 }
-.container .contactame div a:hover {
+main .container .contactame div a:hover {
   background-color: #f3f3f3;
   border: 2px solid #392c50;
   color: #392c50;
 }
-.container .video iframe {
+main .container .video iframe {
   margin-top: 52px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
 }
-
-.cajaaboutme {
+main .cajaaboutme {
   margin-top: 52px;
   margin-bottom: 52px;
 }
-.cajaaboutme .aboutme {
+main .cajaaboutme .aboutme {
   text-align: center;
   margin: 0px;
   height: auto;
@@ -199,41 +198,41 @@ h2, h3 {
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
 }
-.cajaaboutme .aboutme .redessociales {
+main .cajaaboutme .aboutme .redessociales {
   border-radius: 10px;
 }
-.cajaaboutme .aboutme div {
+main .cajaaboutme .aboutme div {
   padding: 2px;
 }
 
-.resume .container .section-title {
+main .resume .container .section-title {
   margin: 52px 0px;
 }
 
 .body-projects {
   background: linear-gradient(#8BE1F0, #392c50);
 }
-.body-projects .row {
+.body-projects main .container .row {
   justify-content: center;
 }
-.body-projects .row .carousel-inner {
+.body-projects main .container .row .carousel-inner {
   padding-top: 156px;
   height: 508px;
 }
-.body-projects .row .carousel-inner .carousel-control-next,
-.body-projects .row .carousel-inner .carousel-control-prev {
+.body-projects main .container .row .carousel-inner .carousel-control-next,
+.body-projects main .container .row .carousel-inner .carousel-control-prev {
   margin-top: 160px;
 }
-.body-projects .row .carousel-inner img {
+.body-projects main .container .row .carousel-inner img {
   padding-left: 195px;
 }
-.body-projects .row .carousel-inner .carousel-caption p {
+.body-projects main .container .row .carousel-inner .carousel-caption p {
   margin-bottom: 285px;
 }
-.body-projects .trabajemos {
+.body-projects main .trabajemos {
   margin: 52px;
 }
-.body-projects .trabajemos .contacto {
+.body-projects main .trabajemos .contacto {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
@@ -242,13 +241,13 @@ h2, h3 {
   background-color: #8BE1F0;
   border-radius: 10px;
 }
-.body-projects .trabajemos .contacto .trabajemosjuntos {
+.body-projects main .trabajemos .contacto .trabajemosjuntos {
   padding: 4px;
 }
-.body-projects .trabajemos .contacto .botoncontact {
+.body-projects main .trabajemos .contacto .botoncontact {
   margin: 8px;
 }
-.body-projects .trabajemos .contacto .botoncontact a {
+.body-projects main .trabajemos .contacto .botoncontact a {
   margin: 8px;
   width: 100%;
   border-radius: 10px;
@@ -257,7 +256,7 @@ h2, h3 {
   text-decoration: none;
   padding: 8px 16px;
 }
-.body-projects .trabajemos .contacto .botoncontact a:hover {
+.body-projects main .trabajemos .contacto .botoncontact a:hover {
   background-color: #f3f3f3;
   border: 2px solid #392c50;
   color: #392c50;
@@ -279,6 +278,7 @@ h2, h3 {
   margin-bottom: 156px;
   grid-area: datosmapa;
 }
+
 .datosmapa .info {
   padding: 32px;
   background: #ffffff;
@@ -288,8 +288,8 @@ h2, h3 {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   /* cuadro con formulario */
 }
+
 .datosmapa .info img {
-  font-size: 14px;
   float: left;
   width: 64px;
   height: 64px;
@@ -302,16 +302,20 @@ h2, h3 {
   margin-right: 8px;
   transition: all 0.3s ease-in-out;
 }
+
 .datosmapa .info .address,
 .datosmapa .info .email,
 .datosmapa .info .phone {
   padding-bottom: 32px;
 }
+
 .datosmapa .info h4 {
   font-size: 22px;
   font-weight: 600px;
   padding-top: 4px;
+  margin-bottom: 4px;
 }
+
 .datosmapa .info p {
   padding: 0 0 8px 52px;
   margin-bottom: 16px;
@@ -321,6 +325,7 @@ h2, h3 {
 .datosformulario {
   margin-right: 52px;
 }
+
 .datosformulario .enviarmensaje {
   width: 100%;
   height: 750px;
@@ -329,9 +334,11 @@ h2, h3 {
   border-radius: 10px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
+
 .datosformulario .enviarmensaje .container {
   border-radius: 10px;
 }
+
 .datosformulario .enviarmensaje .container input[type=text], .datosformulario .enviarmensaje .container select, .datosformulario .enviarmensaje .container textarea {
   width: 100%;
   padding: 12px;
@@ -342,10 +349,12 @@ h2, h3 {
   margin-bottom: 16px;
   resize: vertical;
 }
+
 .datosformulario .enviarmensaje .container #subject {
   height: 134px;
   margin-bottom: 4px;
 }
+
 .datosformulario .enviarmensaje .container input[type=submit] {
   background-color: #392c50;
   color: #ffffff;
@@ -355,6 +364,7 @@ h2, h3 {
   border-radius: 10px;
   cursor: pointer;
 }
+
 .datosformulario .enviarmensaje .container input[type=submit]:hover {
   background-color: #8BE1F0;
   color: #392c50;
@@ -453,43 +463,43 @@ h2, h3 {
   }
   /* FIN PAG 1 "HOME"*/
   /*INICIO PAG 2 "ABOUT ME"*/
-  .container .contactame {
+  .main-aboutme .container .contactame {
     width: 344px;
     height: 318px;
     margin: 52px 68px;
     padding: 4px 8px;
     margin-bottom: 6px;
   }
-  .container .contactame .tituloparrafo {
+  .main-aboutme .container .contactame .tituloparrafo {
     font-size: 18px;
     margin-left: 8px;
     margin-bottom: 0px;
   }
-  .container .contactame .parrafocontactame {
+  .main-aboutme .container .contactame .parrafocontactame {
     margin-bottom: 0px;
     padding: 8px 80px 8px 8px;
     font-size: 12px;
   }
-  .container .contactame div div a {
+  .main-aboutme .container .contactame div div a {
     font-size: 14px;
     width: 100px;
     margin-left: 8px;
   }
-  .container .video iframe {
+  .main-aboutme .container .video iframe {
     width: 344px;
     height: 318px;
     margin: 52px 68px 0px;
   }
-  .cajaaboutme {
+  .main-aboutme .cajaaboutme {
     margin: 52px 68px;
     width: 344px;
     font-size: 14px;
     height: auto;
   }
-  .cajaaboutme .aboutme h2 {
+  .main-aboutme .cajaaboutme .aboutme h2 {
     font-size: 20px;
   }
-  .cajaaboutme .aboutme h4 {
+  .main-aboutme .cajaaboutme .aboutme h4 {
     font-size: 18px;
   }
   /*FIN PAG 2 "ABOUT ME"*/
@@ -499,36 +509,37 @@ h2, h3 {
   }
   /*FIN PAG 3 "RESUME"*/
   /*INICIO PAG 4 "PROJECTS"*/
-  .row .col-9 {
+  .body-projects main .container .row .col-9 {
     width: 85%;
     padding: 0px;
   }
-  .row .col-9 .carousel-inner {
+  .body-projects main .container .row .col-9 .carousel .carousel-inner {
     padding-top: 52px;
     height: 290px;
   }
-  .row .col-9 .carousel-inner .carousel-control-next,
-  .row .col-9 .carousel-inner .carousel-control-prev {
+  .body-projects main .container .row .col-9 .carousel .carousel-inner .carousel-control-next,
+  .body-projects main .container .row .col-9 .carousel .carousel-inner .carousel-control-prev {
     margin-top: 8px;
   }
-  .row .col-9 .carousel-inner img {
+  .body-projects main .container .row .col-9 .carousel .carousel-inner img {
     padding-left: 46px;
     width: 384px;
     height: 200px;
   }
-  .row .col-9 .carousel-inner .carousel-caption {
+  .body-projects main .container .row .col-9 .carousel .carousel-inner .carousel-caption {
     margin-bottom: 185px;
   }
   /*FIN PAG 4 "PROJECTS"*/
   /*PAG 5 "CONTACT"*/
   .grid {
-    grid-template-rows: 16% 42% 42%;
+    grid-template-rows: 20% 40% 40%;
     grid-template-columns: 1fr;
     grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
   }
   .datosformulario {
     margin-left: 52px;
   }
-} /*FIN 5 "CONTACT"*/
+}
+/*FIN 5 "CONTACT"*/
 
 /*# sourceMappingURL=style.css.map */
