@@ -189,20 +189,21 @@
             }
         }
     }    
-            /*FIN PAG 4 "PROJECTS"*/
-            /*PAG 5 "CONTACT"*/
-            .grid{
-                grid-template-rows: 20% 40% 40%;
-                grid-template-columns: 1fr;
-                grid-template-areas: 
-                "contacttexto"
-                "datosmapa"
-                "datosformulario ";
-            }
-            .datosformulario{
-                margin-left: 52px;
-            } 
-        }    
+    /*FIN PAG 4 "PROJECTS"*/
+    /*PAG 5 "CONTACT"*/
+    .grid{
+        grid-template-rows: 14% 44% 44%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "contacttexto"
+        "datosmapa"
+        "datosformulario ";
+        .datosformulario{
+            margin-left: map-get($medidas,margen-arriba );
+        }
+    }
+     
+}    
 
 
 

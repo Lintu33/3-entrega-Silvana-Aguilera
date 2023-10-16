@@ -262,24 +262,26 @@ main .resume .container .section-title {
   color: #392c50;
 }
 
-.section-title {
+main .grid {
+  /* cuadro con los datos y mapa*/
+}
+main .grid .contacttexto {
+  grid-area: contacttexto;
+}
+main .grid .contacttexto .section-title {
   margin: 52px 52px 0px;
 }
-
-.section-title h2 {
+main .grid .contacttexto .section-title h2 {
   margin-bottom: 8px;
 }
-
-/* cuadro con los datos y mapa*/
-.datosmapa {
+main .grid .datosmapa {
   width: 100%;
   height: 750px;
   padding: 0px 52px;
   margin-bottom: 156px;
   grid-area: datosmapa;
 }
-
-.datosmapa .info {
+main .grid .datosmapa .info {
   padding: 32px;
   background: #ffffff;
   border-radius: 10px;
@@ -288,8 +290,7 @@ main .resume .container .section-title {
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   /* cuadro con formulario */
 }
-
-.datosmapa .info img {
+main .grid .datosmapa .info img {
   float: left;
   width: 64px;
   height: 64px;
@@ -302,31 +303,27 @@ main .resume .container .section-title {
   margin-right: 8px;
   transition: all 0.3s ease-in-out;
 }
-
-.datosmapa .info .address,
-.datosmapa .info .email,
-.datosmapa .info .phone {
+main .grid .datosmapa .info .address,
+main .grid .datosmapa .info .email,
+main .grid .datosmapa .info .phone {
   padding-bottom: 32px;
 }
-
-.datosmapa .info h4 {
+main .grid .datosmapa .info .address bi h4 {
   font-size: 22px;
   font-weight: 600px;
   padding-top: 4px;
   margin-bottom: 4px;
 }
-
-.datosmapa .info p {
+main .grid .datosmapa .info .address bi p {
   padding: 0 0 8px 52px;
   margin-bottom: 16px;
   font-size: 18px;
 }
-
-.datosformulario {
+main .grid .datosformulario {
+  grid-area: datosformulario;
   margin-right: 52px;
 }
-
-.datosformulario .enviarmensaje {
+main .grid .datosformulario .enviarmensaje {
   width: 100%;
   height: 750px;
   padding: 32px;
@@ -334,12 +331,10 @@ main .resume .container .section-title {
   border-radius: 10px;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
-
-.datosformulario .enviarmensaje .container {
+main .grid .datosformulario .enviarmensaje .container {
   border-radius: 10px;
 }
-
-.datosformulario .enviarmensaje .container input[type=text], .datosformulario .enviarmensaje .container select, .datosformulario .enviarmensaje .container textarea {
+main .grid .datosformulario .enviarmensaje .container input[type=text], main .grid .datosformulario .enviarmensaje .container select, main .grid .datosformulario .enviarmensaje .container textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -349,13 +344,11 @@ main .resume .container .section-title {
   margin-bottom: 16px;
   resize: vertical;
 }
-
-.datosformulario .enviarmensaje .container #subject {
+main .grid .datosformulario .enviarmensaje .container #subject {
   height: 134px;
   margin-bottom: 4px;
 }
-
-.datosformulario .enviarmensaje .container input[type=submit] {
+main .grid .datosformulario .enviarmensaje .container input[type=submit] {
   background-color: #392c50;
   color: #ffffff;
   padding: 8px 16px;
@@ -364,8 +357,7 @@ main .resume .container .section-title {
   border-radius: 10px;
   cursor: pointer;
 }
-
-.datosformulario .enviarmensaje .container input[type=submit]:hover {
+main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   background-color: #8BE1F0;
   color: #392c50;
 }
@@ -375,14 +367,6 @@ main .resume .container .section-title {
   grid-template-rows: 20% 80%;
   grid-template-columns: 4fr 5fr;
   grid-template-areas: "contacttexto contacttexto" "datosmapa datosformulario ";
-}
-
-.contacttexto {
-  grid-area: contacttexto;
-}
-
-.datosformulario {
-  grid-area: datosformulario;
 }
 
 /*FOOTER*/
@@ -532,11 +516,11 @@ main .resume .container .section-title {
   /*FIN PAG 4 "PROJECTS"*/
   /*PAG 5 "CONTACT"*/
   .grid {
-    grid-template-rows: 20% 40% 40%;
+    grid-template-rows: 14% 44% 44%;
     grid-template-columns: 1fr;
     grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
   }
-  .datosformulario {
+  .grid .datosformulario {
     margin-left: 52px;
   }
 }

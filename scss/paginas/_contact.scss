@@ -1,100 +1,111 @@
-.section-title {
-    margin: map-get($medidas, margen-arriba) map-get($medidas, margen-arriba) 0px
-  }
-  
-  .section-title h2 {
-    margin-bottom: map-get($medidas, padding-parrafo1);
-  }
-  
-  /* cuadro con los datos y mapa*/
-  .datosmapa {
-    width: map-get($medidas, ancho-completo);
-    height: map-get($medidas, alto2);
-    padding: map-get($medidas, sin-padding) map-get($medidas, margen-arriba);
-    margin-bottom: map-get($medidas, margen-inferior);
-    grid-area: datosmapa;
-  }
-  .datosmapa .info {
-    padding: map-get($medidas, padding-parrafo4);
-    background: map-get($colores, fondoformulario);
-    border-radius: map-get($medidas, esquinas);
-    width: map-get($medidas, ancho-completo);
-    height: map-get($medidas, alto2);
-    box-shadow: map-get($medidas, sombraformulario);
-    /* cuadro con formulario */
-  }
-  .datosmapa .info img {
-    float: left;
-    width: map-get($medidas, img);
-    height: map-get($medidas, img);
-    background: map-get($colores, fondocajas);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: map-get($medidas, padding-parrafo1);
-    border-radius: map-get($medidas,esquinas);
-    margin-right: map-get($medidas, padding-parrafo1);
-    transition: all 0.3s ease-in-out;
-  }
-  .datosmapa .info .address,
-  .datosmapa .info .email,
-  .datosmapa .info .phone {
-    padding-bottom: map-get($medidas, padding-parrafo4);
-  }
-  .datosmapa .info h4 {
-    font-size: map-get($tamanios, h2);
-    font-weight: map-get($medidas,alto);
-    padding-top: 4px;
-    margin-bottom: 4px ;   
-  }
-  .datosmapa .info p {
-    padding: 0 0 map-get($medidas, padding-parrafo1) map-get($medidas,margen-arriba);
-    margin-bottom: map-get($medidas, padding-parrafo2);
-    font-size: map-get($tamanios, h4); 
-  }
-  
-  .datosformulario {
-    margin-right: map-get($medidas, margen-arriba);
-  }
-  .datosformulario .enviarmensaje {
-    width: map-get($medidas, ancho-completo);
-    height: map-get($medidas, alto2);
-    padding: map-get($medidas, padding-parrafo4);
-    margin-right: map-get($medidas,margen-arriba);
-    border-radius: map-get($medidas, esquinas);
-    box-shadow: map-get($medidas,sombraformulario); 
-  }
-  .datosformulario .enviarmensaje .container {
-    border-radius: map-get($medidas, esquinas);
-  }
-  .datosformulario .enviarmensaje .container input[type=text], .datosformulario .enviarmensaje .container select, .datosformulario .enviarmensaje .container textarea {
-    width: map-get($medidas, ancho-completo);
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius:map-get($medidas,esquinas);
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: map-get($medidas,padding-parrafo2);;
-    resize: vertical;
-  }
-  .datosformulario .enviarmensaje .container #subject {
-    height: 134px;
-    margin-bottom: 4px;
-  }
-  .datosformulario .enviarmensaje .container input[type=submit] {
-    background-color: map-get($colores,primario);
-    color: map-get($colores,fondoformulario);
-    padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
-    margin-top: 20px;
-    border: none;
-    border-radius: map-get($medidas, esquinas);
-    cursor: pointer;
-  }
-  .datosformulario .enviarmensaje .container input[type=submit]:hover {
-    background-color: map-get($colores,fondocajas);
-    color: map-get($colores,primario);
-  }
-  
+main{
+    .grid{
+        .contacttexto{
+            grid-area: contacttexto;
+            .section-title {
+                margin: map-get($medidas, margen-arriba) map-get($medidas, margen-arriba) 0px;
+                h2 {
+                    margin-bottom: map-get($medidas, padding-parrafo1);
+                }
+              }
+
+            }
+        /* cuadro con los datos y mapa*/
+        .datosmapa {
+            width: map-get($medidas, ancho-completo);
+            height: map-get($medidas, alto2);
+            padding: map-get($medidas, sin-padding) map-get($medidas, margen-arriba);
+            margin-bottom: map-get($medidas, margen-inferior);
+            grid-area: datosmapa;
+            .info {
+                padding: map-get($medidas, padding-parrafo4);
+                background: map-get($colores, fondoformulario);
+                border-radius: map-get($medidas, esquinas);
+                width: map-get($medidas, ancho-completo);
+                height: map-get($medidas, alto2);
+                box-shadow: map-get($medidas, sombraformulario);
+                /* cuadro con formulario */
+                img {
+                    float: left;
+                    width: map-get($medidas, img);
+                    height: map-get($medidas, img);
+                    background: map-get($colores, fondocajas);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: map-get($medidas, padding-parrafo1);
+                    border-radius: map-get($medidas,esquinas);
+                    margin-right: map-get($medidas, padding-parrafo1);
+                    transition: all 0.3s ease-in-out;
+                 }
+                .address,
+                .email,
+                .phone {
+                padding-bottom: map-get($medidas, padding-parrafo4);
+                }
+                .address{
+                    bi{
+                        h4 {
+                            font-size: map-get($tamanios, h2);
+                            font-weight: map-get($medidas,alto);
+                            padding-top: 4px;
+                            margin-bottom: 4px ;   
+                          }
+                          p {
+                            padding: 0 0 map-get($medidas, padding-parrafo1) map-get($medidas,margen-arriba);
+                            margin-bottom: map-get($medidas, padding-parrafo2);
+                            font-size: map-get($tamanios, h4); 
+                          }
+
+                    }
+                }
+              }
+        }
+        .datosformulario {
+            grid-area: datosformulario;
+            margin-right: map-get($medidas, margen-arriba);
+            .enviarmensaje {
+                width: map-get($medidas, ancho-completo);
+                height: map-get($medidas, alto2);
+                padding: map-get($medidas, padding-parrafo4);
+                margin-right: map-get($medidas,margen-arriba);
+                border-radius: map-get($medidas, esquinas);
+                box-shadow: map-get($medidas,sombraformulario); 
+                .container {
+                    border-radius: map-get($medidas, esquinas);
+                    input[type=text], select, textarea {
+                        width: map-get($medidas, ancho-completo);
+                        padding: 12px;
+                        border: 1px solid #ccc;
+                        border-radius:map-get($medidas,esquinas);
+                        box-sizing: border-box;
+                        margin-top: 6px;
+                        margin-bottom: map-get($medidas,padding-parrafo2);;
+                        resize: vertical;
+                      }
+                    #subject {
+                        height: 134px;
+                        margin-bottom: 4px;
+                    }
+                    input[type=submit] {
+                        background-color: map-get($colores,primario);
+                        color: map-get($colores,fondoformulario);
+                        padding: map-get($medidas,padding-parrafo1) map-get($medidas,padding-parrafo2);
+                        margin-top: 20px;
+                        border: none;
+                        border-radius: map-get($medidas, esquinas);
+                        cursor: pointer;
+                      }
+                    input[type=submit]:hover {
+                        background-color: map-get($colores,fondocajas);
+                        color: map-get($colores,primario);
+                    }
+                  }
+            }
+        }    
+     }
+    
+}
   .grid{
     display: grid;
     grid-template-rows: 20% 80%;
@@ -103,12 +114,3 @@
     "contacttexto contacttexto" 
     "datosmapa datosformulario ";
   }
-  
-  .contacttexto {
-    grid-area: contacttexto;
-  }
-  
-  .datosformulario {
-    grid-area: datosformulario;
-  }
-  
