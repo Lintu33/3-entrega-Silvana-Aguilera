@@ -191,7 +191,8 @@
     }    
     /*FIN PAG 4 "PROJECTS"*/
     /*PAG 5 "CONTACT"*/
-    .grid{
+    main {
+        .grid{
         grid-template-rows: 14% 44% 44%;
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -200,8 +201,9 @@
         "datosformulario ";
         .datosformulario{
             margin-left: map-get($medidas,margen-arriba );
+            }
         }
-    }
+    } 
      
 }    
 

@@ -32,11 +32,11 @@
                         color: map-get($colores, texto1);
                         text-decoration: none;
                         padding: map-get($medidas, padding-parrafo1) map-get($medidas, padding-parrafo2);
-                    }
-                    a:hover {
-                        background-color: map-get($colores, texto1);
-                        border: 2px solid map-get($colores, primario);
-                        color: map-get($colores, primario);
+                        &:hover {
+                            background-color: map-get($colores, texto1);
+                            border: 2px solid map-get($colores, primario);
+                            color: map-get($colores, primario);
+                        }
                     }
                 }
             }

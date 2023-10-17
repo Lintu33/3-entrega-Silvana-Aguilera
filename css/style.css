@@ -66,8 +66,10 @@ h2, h3 {
   border: 1px solid #f3f3f3;
   box-shadow: 0 0 16px 1px #f3f3f3;
 }
-.navbar .container-fluid .collapse .navbar-nav .active a:hover, .navbar .container-fluid .collapse .navbar-nav navbar-nav a a:hover {
+.navbar .container-fluid .collapse .navbar-nav .active:hover, .navbar .container-fluid .collapse .navbar-nav navbar-nav a:hover {
   color: #392c50;
+  border-radius: 10px;
+  border: 2px solid #392c50;
 }
 .navbar .container-fluid .collapse .navbar-nav .nav-link {
   width: 110px;
@@ -162,12 +164,12 @@ main .container .contactame {
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
 }
-main .container .contactame .parrafocontactame {
+main .container .contactame div .parrafocontactame {
   padding-top: 24px;
   padding-bottom: 24px;
   font-size: 18px;
 }
-main .container .contactame div a {
+main .container .contactame div div a {
   width: 100%;
   border-radius: 10px;
   background-color: #392c50;
@@ -175,7 +177,7 @@ main .container .contactame div a {
   text-decoration: none;
   padding: 8px 16px;
 }
-main .container .contactame div a:hover {
+main .container .contactame div div a:hover {
   background-color: #f3f3f3;
   border: 2px solid #392c50;
   color: #392c50;
@@ -263,6 +265,10 @@ main .resume .container .section-title {
 }
 
 main .grid {
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 4fr 5fr;
+  grid-template-areas: "contacttexto contacttexto" "datosmapa datosformulario ";
   /* cuadro con los datos y mapa*/
 }
 main .grid .contacttexto {
@@ -334,7 +340,9 @@ main .grid .datosformulario .enviarmensaje {
 main .grid .datosformulario .enviarmensaje .container {
   border-radius: 10px;
 }
-main .grid .datosformulario .enviarmensaje .container input[type=text], main .grid .datosformulario .enviarmensaje .container select, main .grid .datosformulario .enviarmensaje .container textarea {
+main .grid .datosformulario .enviarmensaje .container input[type=text],
+main .grid .datosformulario .enviarmensaje .container select,
+main .grid .datosformulario .enviarmensaje .container textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -360,13 +368,6 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit] {
 main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   background-color: #8BE1F0;
   color: #392c50;
-}
-
-.grid {
-  display: grid;
-  grid-template-rows: 20% 80%;
-  grid-template-columns: 4fr 5fr;
-  grid-template-areas: "contacttexto contacttexto" "datosmapa datosformulario ";
 }
 
 /*FOOTER*/
@@ -515,12 +516,12 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   }
   /*FIN PAG 4 "PROJECTS"*/
   /*PAG 5 "CONTACT"*/
-  .grid {
+  main .grid {
     grid-template-rows: 14% 44% 44%;
     grid-template-columns: 1fr;
     grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
   }
-  .grid .datosformulario {
+  main .grid .datosformulario {
     margin-left: 52px;
   }
 }

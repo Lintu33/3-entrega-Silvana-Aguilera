@@ -27,20 +27,23 @@
                 a{
                     color:map-get($colores,texto1);
                     margin-left: map-get($medidas,padding-parrafo1);
+                    &:hover{
+                        color: map-get($colores,texto1);
+                        border-radius: map-get($medidas, esquinas);
+                        border: 2px solid map-get($colores,texto1);
+                    }
                 }
-                a:hover{
-                    color: map-get($colores,texto1);
-                    border-radius: map-get($medidas, esquinas);
-                    border: 2px solid map-get($colores,texto1);
-                }
+    
                 .active, navbar-nav a{
                     background-color: map-get($colores,texto1);
                     color: map-get($colores,primario);
                     border-radius: map-get($medidas, esquinas);
                     border: 1px solid map-get($colores,texto1);
                     box-shadow:  map-get($medidas, sombra-active);
-                    a:hover{
+                    &:hover{
                         color: map-get($colores,primario);
+                        border-radius: map-get($medidas, esquinas);
+                        border: 2px solid map-get($colores,primario);
                     }
                 }
                 /*Botones*/
