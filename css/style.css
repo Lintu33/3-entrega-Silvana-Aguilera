@@ -20,6 +20,7 @@ h2, h3 {
 }
 
 .navbar {
+  z-index: 999;
   background-color: #392c50;
   margin: 0px;
   padding: 0px;
@@ -207,8 +208,14 @@ main .cajaaboutme .aboutme div {
   padding: 2px;
 }
 
-main .resume .container .section-title {
-  margin: 52px 0px;
+main .resume {
+  margin: 52px;
+}
+main .resume .container-resume {
+  margin: 52px;
+}
+main .resume .section-title {
+  margin-bottom: 52px;
 }
 
 .body-projects {
@@ -491,6 +498,9 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   /*INICIO PAG 3 "RESUME"*/
   .resume {
     margin: 0px 52px;
+  }
+  .resume .container-resume .row .col-lg-6 .resume-item {
+    margin-bottom: 52px;
   }
   /*FIN PAG 3 "RESUME"*/
   /*INICIO PAG 4 "PROJECTS"*/

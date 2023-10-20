@@ -1,4 +1,5 @@
 .navbar{
+    z-index: 999;
     background-color: map-get($colores,primario);
     margin: map-get($medidas,sin-padding);
     padding: map-get($medidas,sin-padding);
@@ -33,7 +34,6 @@
                         border: 2px solid map-get($colores,texto1);
                     }
                 }
-    
                 .active, navbar-nav a{
                     background-color: map-get($colores,texto1);
                     color: map-get($colores,primario);

@@ -1,11 +1,23 @@
 main{
-    .resume{
-        .container{
-            .section-title{
-                margin: map-get($medidas,margen-arriba) 0px ;
-                }
+    .resume {
+        margin: map-get($medidas, margen-arriba);
+        .container-resume{
+            margin: map-get($medidas, margen-arriba);
             }
+            .section-title{
+                margin-bottom: map-get($medidas,margen-arriba);
+                }
+                        }
+
         }
-}
+
+
+
+    
+    
+
+    
+
+
     
 

@@ -146,7 +146,18 @@
     /*FIN PAG 2 "ABOUT ME"*/
     /*INICIO PAG 3 "RESUME"*/
     .resume {
-        margin: 0px map-get($medidas, margen-arriba)
+        margin: 0px map-get($medidas, margen-arriba);
+        .container-resume{
+            .row{
+                .col-lg-6{
+                    .resume-item{
+                        margin-bottom: map-get($medidas, margen-arriba);  
+                }
+            }
+        }
+
+        }
+    
     }
 
     /*FIN PAG 3 "RESUME"*/
@@ -203,6 +214,7 @@
             margin-left: map-get($medidas,margen-arriba );
             }
         }
+        
     } 
      
 }    
