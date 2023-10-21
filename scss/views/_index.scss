@@ -1,5 +1,5 @@
 .pag1{
-    background: linear-gradient(map-get($colores, fondoindex),map-get($colores, primario)) ;
+    background: linear-gradient(#222123,#352546) ;
     /*contenedor de textos y botones*/
     .saludoydibujo {
         margin:  map-get($medidas, margen-arriba)  map-get($medidas, sin-padding);

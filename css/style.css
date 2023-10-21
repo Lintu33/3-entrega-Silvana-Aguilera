@@ -78,7 +78,7 @@ h2, h3 {
 }
 
 .pag1 {
-  background: linear-gradient(#34373a, #392c50);
+  background: linear-gradient(#222123, #352546);
   /*contenedor de textos y botones*/
   /*Seccion cualidades del desarrollador*/
 }
@@ -219,7 +219,7 @@ main .resume .section-title {
 }
 
 .body-projects {
-  background: linear-gradient(#8BE1F0, #392c50);
+  background: linear-gradient(rgba(102, 255, 237, 0.6274509804), #392c50);
 }
 .body-projects main .container .row {
   justify-content: center;
