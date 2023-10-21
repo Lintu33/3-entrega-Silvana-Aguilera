@@ -224,6 +224,27 @@ main .resume .section-title {
 .body-projects main .container .row {
   justify-content: center;
 }
+.body-projects main .container .row .carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-projects main .container .row .carousel-indicators button {
+  background-color: transparent; /* Elimina el fondo inactivo de Bootstrap */
+  border: none; /* Elimina el borde inactivo de Bootstrap */
+}
+.body-projects main .container .row .carousel-indicators .circle {
+  width: 12px; /* Tamaño de los círculos */
+  height: 12px;
+  background-color: #fff; /* Color de fondo de los círculos */
+  border: 2px solid #000; /* Borde de los círculos */
+  border-radius: 50%; /* Para hacerlos círculos */
+  margin: 0 5px; /* Espacio entre los círculos */
+  cursor: pointer;
+}
+.body-projects main .container .row .carousel-indicators button.active .circle {
+  background-color: #000; /* Color de fondo del círculo activo */
+}
 .body-projects main .container .row .carousel-inner {
   padding-top: 156px;
   height: 518px;

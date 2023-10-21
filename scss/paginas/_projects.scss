@@ -1,25 +1,46 @@
 .body-projects{    
     background: linear-gradient(#66ffeda0,map-get($colores, primario)) ;
     main{ 
-        .container{
-            .row{
+        .container {
+            .row {
                 justify-content: center;
-                .carousel-inner{
+                .carousel-indicators {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    button{
+                            background-color: transparent; /* Elimina el fondo inactivo de Bootstrap */
+                            border: none; /* Elimina el borde inactivo de Bootstrap */
+                        }
+                    .circle {
+                        width: 12px; /* Tamaño de los círculos */
+                        height: 12px;
+                        background-color: #fff; /* Color de fondo de los círculos */
+                        border: 2px solid #000; /* Borde de los círculos */
+                        border-radius: 50%; /* Para hacerlos círculos */
+                        margin: 0 5px; /* Espacio entre los círculos */
+                        cursor: pointer;
+                    }
+                    button.active .circle {
+                        background-color: #000; /* Color de fondo del círculo activo */
+                    }
+                }
+                .carousel-inner {
                     padding-top: 156px;
                     height: 518px;
                     .carousel-control-next,
-                    .carousel-control-prev{
-                    margin-top: 160px;
+                    .carousel-control-prev {
+                        margin-top: 160px;
                     }
-                    img{
+                    img {
                         padding-left: 218px;
                     }
-                    .carousel-caption p{
+                    .carousel-caption p {
                         margin-bottom: 295px;
                     }
                 }
             }
-            }
+        }
             .trabajemos{
                 margin: map-get($medidas,margen-arriba);
                 .contacto{
