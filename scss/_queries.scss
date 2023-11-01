@@ -1,18 +1,14 @@
 /*RESPONSIVE*/
-@media (max-width: 480px) {
-
-    /*PAG 1 "HOME"*/
+@media (min-width: 320px) and (max-width: 480px) {
     /*Nav bar*/
     .navbar {
         .container-fluid {
             .navbar-brand {
-                font-size: map-get($tamanios, h2);
+                font-size: map-get($tamanios, h4);
             }
-
             .navbar-toggler {
                 background-color: map-get($colores, texto1);
             }
-
             .collapse {
                 .navbar-nav {
                     .nav-link {
@@ -20,7 +16,6 @@
                         color: map-get($colores, primario);
                         border-radius: 0px;
                     }
-
                     .active {
                         background-color: map-get($colores, fondocajas);
                         border: 1px solid map-get($colores, fondocajas);
@@ -30,65 +25,61 @@
             }
         }
     }
-
+    /* INICIO PAG 1 "HOME"*/
     .pag1 {
         .saludoydibujo {
             margin-bottom: map-get($medidas, queries-margin);
-
             .cajasaludo {
                 width: map-get($medidas, queries-ancho);
                 height: map-get($medidas, queries-alto);
                 padding-top: 78px;
-
                 /*subtitulo hello*/
                 .titulohello {
                     font-size: map-get($tamanios, h4);
                 }
-
                 .parrafohello {
                     font-size: map-get($tamanios, h3);
                 }
-
                 .botoncajasaludo {
                     font-size: map-get($tamanios, h5);
                     width: map-get($medidas, queries-boton);
                 }
             }
-
             /*Seccion cualidades del desarrollador (con imagen)*/
-            div .dibujo,
             .dibujo img {
                 width: map-get($medidas, queries-ancho);
                 height: map-get($medidas, queries-alto);
                 margin-top: map-get($medidas, queries-margin);
             }
         }
-
         /*Seccion cualidades en cajas*/
-        .cajascualidades {
+        .sectioncualidades{
+            margin-top: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 480px;
+            .cajascualidades {
+            display: flex;
             flex-direction: column;
-            margin-left: map-get($medidas, queries-marginleft);
-
+            align-items: center;
+            justify-content: center;
             .cualidades {
-                margin: map-get($medidas, queries-margincualidades) 0px;
                 padding: map-get($medidas, queries-padding-cualidades);
                 width: map-get($medidas, queries-ancho);
                 height: map-get($medidas, queries-altocualidades);
-
-                .cualidades:nth-child(3) {
-                    margin-bottom: map-get($medidas, margen-arriba);
-                }
-
                 img {
                     padding: 13px;
                 }
+                .cualidades:not(:last-child) {
+                    margin-right: 0px;
+                }
             }
         }
+        }
     }
-
     /* FIN PAG 1 "HOME"*/
     /*INICIO PAG 2 "ABOUT ME"*/
-
     .main-aboutme {
         .container {
             .contactame {
@@ -97,52 +88,43 @@
                 margin: map-get($medidas, margen-arriba) map-get($medidas, queries-marginleft);
                 padding: map-get($medidas, queries-parrafo1) map-get($medidas, padding-parrafo1);
                 margin-bottom: 6px;
-
                 .tituloparrafo {
                     font-size: map-get($tamanios, h4);
                     margin-left: map-get($medidas, padding-parrafo1);
                     margin-bottom: map-get($medidas, sin-padding);
                 }
-
                 .parrafocontactame {
                     margin-bottom: 0px;
                     padding: map-get($medidas, padding-parrafo1) 80px map-get($medidas, padding-parrafo1) map-get($medidas, padding-parrafo1);
                     font-size: map-get($tamanios, h6);
                 }
-
                 div div a {
                     font-size: map-get($tamanios, h5);
                     width: map-get($medidas, queries-boton);
                     margin-left: map-get($medidas, padding-parrafo1);
                 }
             }
-
             .video iframe {
                 width: map-get($medidas, queries-ancho);
                 height: map-get($medidas, queries-alto);
                 margin: map-get($medidas, margen-arriba) map-get($medidas, queries-marginleft) 0px;
             }
         }
-
         .cajaaboutme {
             margin: map-get($medidas, margen-arriba) map-get($medidas, queries-marginleft);
             width: map-get($medidas, queries-ancho);
             font-size: map-get($tamanios, h5);
             height: auto;
-
             .aboutme {
                 h2 {
                     font-size: map-get($tamanios, h3);
                 }
-
                 h4 {
                     font-size: map-get($tamanios, h4);
                 }
             }
         }
-
     }
-
     /*FIN PAG 2 "ABOUT ME"*/
     /*INICIO PAG 3 "RESUME"*/
     .resume {
@@ -155,48 +137,40 @@
                 }
             }
         }
-
-        }
-    
     }
-
+}
     /*FIN PAG 3 "RESUME"*/
     /*INICIO PAG 4 "PROJECTS"*/
     .body-projects {
         main {
             .container {
                 .row {
+                    width: 480px;
                     .col-9 {
-                        width: 85%;
-                        padding: map-get($medidas, sin-padding);
-
-                        .carousel {
-                            .carousel-inner {
-                                padding-top: map-get($medidas, margen-arriba);
-                                height: 290px;
-
-                                .carousel-control-next,
-                                .carousel-control-prev {
-                                    margin-top: map-get($medidas, padding-parrafo1);
+                        width: 350px;
+                    .carousel-indicators {
+                        .circle {
+                            width: 12px;
+                            height: 12px;   
+                            }
+                        }
+                    .carousel-inner {
+                                width: 350px;
+                                padding-top: 54px;
+                                height: 254px;
+                            .carousel-control-prev,
+                            .carousel-control-next{
+                                    height: 171px;
+                                    margin-top: 54px;
                                 }
-
                                 img {
-                                    padding-left: 46px;
-                                    width: 384px;
-                                    height: 200px;
-                                }
-
-                                .carousel-caption {
-                                    margin-bottom: 185px;
+                                    width: 350px;
+                                    height: 171px;
                                 }
                             }
-
                         }
-
                     }
-
                 }
-
             }
         }
     }    
@@ -213,12 +187,6 @@
         .datosformulario{
             margin-left: map-get($medidas,margen-arriba );
             }
-        }
-        
+        }  
     } 
-     
-}    
-
-
-
 /*FIN 5 "CONTACT"*/

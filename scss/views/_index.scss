@@ -1,5 +1,7 @@
 .pag1{
     background: linear-gradient(#222123,#352546) ;
+    justify-content: center;
+    align-items: center;
     /*contenedor de textos y botones*/
     .saludoydibujo {
         margin:  map-get($medidas, margen-arriba)  map-get($medidas, sin-padding);
@@ -51,22 +53,27 @@
         } 
     }    
     /*Seccion cualidades del desarrollador*/
-    .cajascualidades {
-        @include centrar(flex,center,space-between);
-        margin-left: map-get($medidas, margen-arriba);
-        margin-bottom: map-get($medidas, sin-padding);
-        width: 1348px;
-        .cualidades {
-            width: 416px;
-            height: 200px;
-            padding: map-get($medidas, padding-parrafo4);
-            margin-bottom: map-get($medidas, margen-arriba);
-            background-color: map-get($colores, fondocajas);
-            border-radius: map-get($medidas, esquinas);
-            box-shadow: map-get($colores, sombra);
-            img {
-                padding-bottom: map-get($medidas, padding-parrafo4);
+    .sectioncualidades{
+        justify-content: space-around;
+        align-items: center;
+        width: 1440px;
+        .cajascualidades {
+            @include centrar(flex,center,space-evenly);
+            margin-bottom: map-get($medidas, sin-padding);
+            .cualidades {
+                width: 416px;
+                height: 200px;
+                margin-right: 0px;
+                padding: map-get($medidas, padding-parrafo4);
+                margin-bottom: map-get($medidas, margen-arriba);
+                background-color: map-get($colores, fondocajas);
+                border-radius: map-get($medidas, esquinas);
+                box-shadow: map-get($colores, sombra);
+                img {
+                    padding-bottom: map-get($medidas, padding-parrafo4);
+                }
+            
+                }
             }
         }
     }
-}
