@@ -1,46 +1,66 @@
 .body-projects{    
     background: linear-gradient(#66ffeda0,map-get($colores, primario)) ;
-    main{ 
+    main {
         .container {
+            margin: 0px;
+            width: 100%;
             .row {
+                width: 1448px;
+                padding: 0px;
                 justify-content: center;
+                .col-9{
+                    justify-content: center;
+                    width: 1038px;
+               
                 .carousel-indicators {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    button{
-                            background-color: transparent; /* Elimina el fondo inactivo de Bootstrap */
-                            border: none; /* Elimina el borde inactivo de Bootstrap */
-                        }
+                    button {
+                        background-color: transparent;
+                        border: none;
+                    }
                     .circle {
-                        width: 12px; /* Tamaño de los círculos */
-                        height: 12px;
-                        background-color: #fff; /* Color de fondo de los círculos */
-                        border: 2px solid #000; /* Borde de los círculos */
-                        border-radius: 50%; /* Para hacerlos círculos */
-                        margin: 0 5px; /* Espacio entre los círculos */
+                        width: 14px;
+                        height: 14px;
+                        background-color: map-get($colores, fondoformulario);
+                        border: 2px solid map-get($colores, primario);
+                        border-radius: 50%;
+                        margin: 0 5px;
                         cursor: pointer;
                     }
                     button.active .circle {
-                        background-color: #000; /* Color de fondo del círculo activo */
+                        background-color: map-get($colores, fondocajas);
                     }
                 }
                 .carousel-inner {
-                    padding-top: 156px;
-                    height: 518px;
-                    .carousel-control-next,
+                    padding-top: 108px;
+                    width: 1038px; /* Ancho deseado */
+                    height: 658px; /* Alto deseado */
+                    object-fit: cover;
                     .carousel-control-prev {
-                        margin-top: 160px;
+                        background-color: rgba(70, 245, 245, 0.461);
+                        height: 508px;
+                        margin-top: 105px;
                     }
-                    img {
-                        padding-left: 218px;
+                    .carousel-control-next{
+                        background-color: rgba(70, 245, 245, 0.461);
+                        height: 508px;
+                        margin-top: 105px;
                     }
-                    .carousel-caption p {
-                        margin-bottom: 295px;
+                   
+                    .carousel-caption{
+                        justify-content: center;
+                    }
+                   
+                    p {
+                        margin-bottom: 508px;
                     }
                 }
             }
         }
+    }
+}
             .trabajemos{
                 margin: map-get($medidas,margen-arriba);
                 .contacto{
@@ -73,5 +93,4 @@
                 }            
         }        
     }
-}
     

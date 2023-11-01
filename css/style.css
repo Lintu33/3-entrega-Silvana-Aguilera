@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.background, .body-projects main .trabajemos .contacto, main .container .contactame {
+.background, .body-projects .trabajemos .contacto, main .container .contactame {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -221,48 +221,66 @@ main .resume .section-title {
 .body-projects {
   background: linear-gradient(rgba(102, 255, 237, 0.6274509804), #392c50);
 }
+.body-projects main .container {
+  margin: 0px;
+  width: 100%;
+}
 .body-projects main .container .row {
+  width: 1448px;
+  padding: 0px;
   justify-content: center;
 }
-.body-projects main .container .row .carousel-indicators {
+.body-projects main .container .row .col-9 {
+  justify-content: center;
+  width: 1038px;
+}
+.body-projects main .container .row .col-9 .carousel-indicators {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.body-projects main .container .row .carousel-indicators button {
-  background-color: transparent; /* Elimina el fondo inactivo de Bootstrap */
-  border: none; /* Elimina el borde inactivo de Bootstrap */
+.body-projects main .container .row .col-9 .carousel-indicators button {
+  background-color: transparent;
+  border: none;
 }
-.body-projects main .container .row .carousel-indicators .circle {
-  width: 12px; /* Tamaño de los círculos */
-  height: 12px;
-  background-color: #fff; /* Color de fondo de los círculos */
-  border: 2px solid #000; /* Borde de los círculos */
-  border-radius: 50%; /* Para hacerlos círculos */
-  margin: 0 5px; /* Espacio entre los círculos */
+.body-projects main .container .row .col-9 .carousel-indicators .circle {
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 2px solid #392c50;
+  border-radius: 50%;
+  margin: 0 5px;
   cursor: pointer;
 }
-.body-projects main .container .row .carousel-indicators button.active .circle {
-  background-color: #000; /* Color de fondo del círculo activo */
+.body-projects main .container .row .col-9 .carousel-indicators button.active .circle {
+  background-color: #8BE1F0;
 }
-.body-projects main .container .row .carousel-inner {
-  padding-top: 156px;
-  height: 518px;
+.body-projects main .container .row .col-9 .carousel-inner {
+  padding-top: 108px;
+  width: 1038px; /* Ancho deseado */
+  height: 658px; /* Alto deseado */
+  object-fit: cover;
 }
-.body-projects main .container .row .carousel-inner .carousel-control-next,
-.body-projects main .container .row .carousel-inner .carousel-control-prev {
-  margin-top: 160px;
+.body-projects main .container .row .col-9 .carousel-inner .carousel-control-prev {
+  background-color: rgba(70, 245, 245, 0.461);
+  height: 508px;
+  margin-top: 105px;
 }
-.body-projects main .container .row .carousel-inner img {
-  padding-left: 218px;
+.body-projects main .container .row .col-9 .carousel-inner .carousel-control-next {
+  background-color: rgba(70, 245, 245, 0.461);
+  height: 508px;
+  margin-top: 105px;
 }
-.body-projects main .container .row .carousel-inner .carousel-caption p {
-  margin-bottom: 295px;
+.body-projects main .container .row .col-9 .carousel-inner .carousel-caption {
+  justify-content: center;
 }
-.body-projects main .trabajemos {
+.body-projects main .container .row .col-9 .carousel-inner p {
+  margin-bottom: 508px;
+}
+.body-projects .trabajemos {
   margin: 52px;
 }
-.body-projects main .trabajemos .contacto {
+.body-projects .trabajemos .contacto {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
@@ -271,13 +289,13 @@ main .resume .section-title {
   background-color: #8BE1F0;
   border-radius: 10px;
 }
-.body-projects main .trabajemos .contacto .trabajemosjuntos {
+.body-projects .trabajemos .contacto .trabajemosjuntos {
   padding: 4px;
 }
-.body-projects main .trabajemos .contacto .botoncontact {
+.body-projects .trabajemos .contacto .botoncontact {
   margin: 8px;
 }
-.body-projects main .trabajemos .contacto .botoncontact a {
+.body-projects .trabajemos .contacto .botoncontact a {
   margin: 8px;
   width: 100%;
   border-radius: 10px;
@@ -286,7 +304,7 @@ main .resume .section-title {
   text-decoration: none;
   padding: 8px 16px;
 }
-.body-projects main .trabajemos .contacto .botoncontact a:hover {
+.body-projects .trabajemos .contacto .botoncontact a:hover {
   background-color: #f3f3f3;
   border: 2px solid #392c50;
   color: #392c50;
