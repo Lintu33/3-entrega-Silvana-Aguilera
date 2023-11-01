@@ -8,7 +8,7 @@ main {
             height: map-get($medidas, alto);
             padding-top: map-get($medidas, padding-parrafo1);
             margin-top: map-get($medidas, margen-arriba);
-            background-image: url("../img/fondo main.webp");
+            background-image: url("../img/fondomain.webp");
             @extend.background;
             padding: map-get($medidas, padding-parrafo3) 280px map-get($medidas, padding-parrafo3) map-get($medidas, padding-parrafo3);
             border-radius: map-get($medidas, esquinas);
