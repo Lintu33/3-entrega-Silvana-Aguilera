@@ -2,7 +2,6 @@
 main {
     .container {
         padding: map-get($medidas, sin-padding);
-
         .contactame {
             width: map-get($medidas, ancho);
             height: map-get($medidas, alto);
@@ -10,15 +9,17 @@ main {
             margin-top: map-get($medidas, margen-arriba);
             background-image: url("../img/fondomain.webp");
             @extend.background;
-            padding: map-get($medidas, padding-parrafo3) 280px map-get($medidas, padding-parrafo3) map-get($medidas, padding-parrafo3);
+            padding: map-get($medidas, padding-parrafo3) 260px map-get($medidas, padding-parrafo3) map-get($medidas, padding-parrafo3);
             border-radius: map-get($medidas, esquinas);
             box-shadow: map-get($medidas, sombra);
-
+            .tituloparrafo{
+                font-weight: bold;
+            }
             div {
                 .parrafocontactame {
                     padding-top: map-get($medidas, padding-parrafo3);
                     padding-bottom: map-get($medidas, padding-parrafo3);
-                    font-size: map-get($tamanios, h4);
+                    font-size: map-get($tamanios, h3);
                 }
                 div {
                     a {
@@ -37,7 +38,6 @@ main {
                 }
             }
         }
-
         /*Seccion info. del desarrollador video*/
         .video iframe {
             margin-top: map-get($medidas, margen-arriba);
@@ -45,11 +45,9 @@ main {
             box-shadow: map-get($medidas, sombra);
         }
     }
-
     .cajaaboutme {
         margin-top: map-get($medidas, margen-arriba);
         margin-bottom: map-get($medidas, margen-arriba);
-
         .aboutme {
             text-align: center;
             margin: map-get($medidas, sin-padding);
@@ -58,11 +56,9 @@ main {
             background-color: map-get($colores, fondocajas);
             border-radius: map-get($medidas, esquinas);
             box-shadow: map-get($medidas, sombra);
-
             .redessociales {
                 border-radius: map-get($medidas, esquinas);
             }
-
             div {
                 padding: 2px;
             }

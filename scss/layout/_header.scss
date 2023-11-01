@@ -16,7 +16,7 @@
         color:map-get($colores,marca);
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: bold;
-        font-size: map-get($tamanios, h1);
+        font-size: 40px;
         }
         .navbar{
             padding: map-get($medidas, sin-padding);

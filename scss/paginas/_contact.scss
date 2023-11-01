@@ -8,16 +8,14 @@ main {
       "datosmapa datosformulario ";
     .contacttexto {
       grid-area: contacttexto;
-
       .section-title {
         margin: map-get($medidas, margen-arriba) map-get($medidas, margen-arriba) 0px;
-
-        h2 {
+        h1 {
           margin-bottom: map-get($medidas, padding-parrafo1);
+          font-weight: bold;
         }
       }
     }
-
     /* cuadro con los datos y mapa*/
     .datosmapa {
       width: map-get($medidas, ancho-completo);
@@ -25,7 +23,6 @@ main {
       padding: map-get($medidas, sin-padding) map-get($medidas, margen-arriba);
       margin-bottom: map-get($medidas, margen-inferior);
       grid-area: datosmapa;
-
       .info {
         padding: map-get($medidas, padding-parrafo4);
         background: map-get($colores, fondoformulario);
@@ -33,7 +30,6 @@ main {
         width: map-get($medidas, ancho-completo);
         height: map-get($medidas, alto2);
         box-shadow: map-get($medidas, sombraformulario);
-
         /* cuadro con formulario */
         img {
           float: left;
@@ -48,13 +44,11 @@ main {
           margin-right: map-get($medidas, padding-parrafo1);
           transition: all 0.3s ease-in-out;
         }
-
         .address,
         .email,
         .phone {
           padding-bottom: map-get($medidas, padding-parrafo4);
         }
-
         .address {
           bi {
             h4 {
@@ -63,22 +57,18 @@ main {
               padding-top: 4px;
               margin-bottom: 4px;
             }
-
             p {
               padding: 0 0 map-get($medidas, padding-parrafo1) map-get($medidas, margen-arriba);
               margin-bottom: map-get($medidas, padding-parrafo2);
               font-size: map-get($tamanios, h4);
             }
-
           }
         }
       }
     }
-
     .datosformulario {
       grid-area: datosformulario;
       margin-right: map-get($medidas, margen-arriba);
-
       .enviarmensaje {
         width: map-get($medidas, ancho-completo);
         height: map-get($medidas, alto2);
@@ -86,10 +76,8 @@ main {
         margin-right: map-get($medidas, margen-arriba);
         border-radius: map-get($medidas, esquinas);
         box-shadow: map-get($medidas, sombraformulario);
-
         .container {
           border-radius: map-get($medidas, esquinas);
-
           input[type=text],
           select,
           textarea {
@@ -103,12 +91,10 @@ main {
             ;
             resize: vertical;
           }
-
           #subject {
             height: 134px;
             margin-bottom: 4px;
           }
-
           input[type=submit] {
             background-color: map-get($colores, primario);
             color: map-get($colores, fondoformulario);
@@ -117,7 +103,6 @@ main {
             border: none;
             border-radius: map-get($medidas, esquinas);
             cursor: pointer;
-
             &:hover {
               background-color: map-get($colores, fondocajas);
               color: map-get($colores, primario);

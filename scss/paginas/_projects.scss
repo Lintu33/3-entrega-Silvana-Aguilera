@@ -11,7 +11,6 @@
                 .col-9{
                     justify-content: center;
                     width: 1038px;
-               
                 .carousel-indicators {
                     display: flex;
                     justify-content: center;
@@ -34,25 +33,23 @@
                     }
                 }
                 .carousel-inner {
-                    padding-top: 108px;
+                    padding-top: 128px;
                     width: 1038px; /* Ancho deseado */
-                    height: 658px; /* Alto deseado */
+                    height: 678px; /* Alto deseado */
                     object-fit: cover;
                     .carousel-control-prev {
                         background-color: rgba(70, 245, 245, 0.461);
                         height: 508px;
-                        margin-top: 105px;
+                        margin-top: 127px;
                     }
                     .carousel-control-next{
                         background-color: rgba(70, 245, 245, 0.461);
                         height: 508px;
-                        margin-top: 105px;
+                        margin-top: 127px;
                     }
-                   
                     .carousel-caption{
                         justify-content: center;
                     }
-                   
                     p {
                         margin-bottom: 508px;
                     }

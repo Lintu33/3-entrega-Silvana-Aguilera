@@ -15,7 +15,12 @@
                 padding-left: map-get($medidas, margen-arriba);
                 padding-bottom: map-get($medidas, padding-parrafo1);
                 color: map-get($colores, texto1);
+
                 }
+                h1{
+                    font-weight: bold;
+                }
+
             /*botones resume y proyectos*/
             .botones {
                 display: flex;

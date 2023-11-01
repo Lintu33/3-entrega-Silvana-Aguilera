@@ -102,6 +102,9 @@ h2, h3 {
   padding-bottom: 8px;
   color: #f3f3f3;
 }
+.pag1 .saludoydibujo .cajasaludo h1 {
+  font-weight: bold;
+}
 .pag1 .saludoydibujo .cajasaludo .botones {
   display: flex;
   margin-left: 52px;
@@ -161,9 +164,12 @@ main .container .contactame {
   padding-top: 8px;
   margin-top: 52px;
   background-image: url("../img/fondomain.webp");
-  padding: 24px 280px 24px 24px;
+  padding: 24px 260px 24px 24px;
   border-radius: 10px;
   box-shadow: 4px 4px 0px 0px rgba(113, 113, 113, 0.243);
+}
+main .container .contactame .tituloparrafo {
+  font-weight: bold;
 }
 main .container .contactame div .parrafocontactame {
   padding-top: 24px;
@@ -256,20 +262,20 @@ main .resume .section-title {
   background-color: #8BE1F0;
 }
 .body-projects main .container .row .col-9 .carousel-inner {
-  padding-top: 108px;
+  padding-top: 128px;
   width: 1038px; /* Ancho deseado */
-  height: 658px; /* Alto deseado */
+  height: 678px; /* Alto deseado */
   object-fit: cover;
 }
 .body-projects main .container .row .col-9 .carousel-inner .carousel-control-prev {
   background-color: rgba(70, 245, 245, 0.461);
   height: 508px;
-  margin-top: 105px;
+  margin-top: 127px;
 }
 .body-projects main .container .row .col-9 .carousel-inner .carousel-control-next {
   background-color: rgba(70, 245, 245, 0.461);
   height: 508px;
-  margin-top: 105px;
+  margin-top: 127px;
 }
 .body-projects main .container .row .col-9 .carousel-inner .carousel-caption {
   justify-content: center;
@@ -323,8 +329,9 @@ main .grid .contacttexto {
 main .grid .contacttexto .section-title {
   margin: 52px 52px 0px;
 }
-main .grid .contacttexto .section-title h2 {
+main .grid .contacttexto .section-title h1 {
   margin-bottom: 8px;
+  font-weight: bold;
 }
 main .grid .datosmapa {
   width: 100%;
@@ -361,7 +368,7 @@ main .grid .datosmapa .info .phone {
   padding-bottom: 32px;
 }
 main .grid .datosmapa .info .address bi h4 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600px;
   padding-top: 4px;
   margin-bottom: 4px;
@@ -369,7 +376,7 @@ main .grid .datosmapa .info .address bi h4 {
 main .grid .datosmapa .info .address bi p {
   padding: 0 0 8px 52px;
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: 16px;
 }
 main .grid .datosformulario {
   grid-area: datosformulario;
@@ -432,7 +439,7 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   /*PAG 1 "HOME"*/
   /*Nav bar*/
   .navbar .container-fluid .navbar-brand {
-    font-size: 22px;
+    font-size: 20px;
   }
   .navbar .container-fluid .navbar-toggler {
     background-color: #f3f3f3;
@@ -461,10 +468,10 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     /*subtitulo hello*/
   }
   .pag1 .saludoydibujo .cajasaludo .titulohello {
-    font-size: 18px;
+    font-size: 16px;
   }
   .pag1 .saludoydibujo .cajasaludo .parrafohello {
-    font-size: 20px;
+    font-size: 18px;
   }
   .pag1 .saludoydibujo .cajasaludo .botoncajasaludo {
     font-size: 14px;
@@ -502,7 +509,7 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     margin-bottom: 6px;
   }
   .main-aboutme .container .contactame .tituloparrafo {
-    font-size: 18px;
+    font-size: 16px;
     margin-left: 8px;
     margin-bottom: 0px;
   }
@@ -528,10 +535,10 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     height: auto;
   }
   .main-aboutme .cajaaboutme .aboutme h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .main-aboutme .cajaaboutme .aboutme h4 {
-    font-size: 18px;
+    font-size: 16px;
   }
   /*FIN PAG 2 "ABOUT ME"*/
   /*INICIO PAG 3 "RESUME"*/
