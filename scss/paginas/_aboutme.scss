@@ -58,6 +58,10 @@ main {
             box-shadow: map-get($medidas, sombra);
             .redessociales {
                 border-radius: map-get($medidas, esquinas);
+                a {
+                    text-decoration: none;
+                  }
+                  
             }
             div {
                 padding: 2px;

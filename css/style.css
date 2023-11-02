@@ -216,6 +216,9 @@ main .cajaaboutme .aboutme {
 main .cajaaboutme .aboutme .redessociales {
   border-radius: 10px;
 }
+main .cajaaboutme .aboutme .redessociales a {
+  text-decoration: none;
+}
 main .cajaaboutme .aboutme div {
   padding: 2px;
 }
