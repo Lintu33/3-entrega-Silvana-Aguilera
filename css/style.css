@@ -229,6 +229,13 @@ main .resume .container-resume {
 main .resume .section-title {
   margin-bottom: 52px;
 }
+main .resume .row .col-lg-6 {
+  padding-right: 52px;
+}
+main .resume .row .col-lg-6 .resume-title,
+main .resume .row .col-lg-6 .resume-item {
+  padding-top: 36px;
+}
 
 .body-projects {
   background: linear-gradient(rgba(102, 255, 237, 0.6274509804), #392c50);
@@ -335,15 +342,14 @@ main .grid .contacttexto {
 main .grid .contacttexto .section-title {
   margin: 52px 52px 0px;
 }
-main .grid .contacttexto .section-title h1 {
+main .grid .contacttexto .section-title h2 {
   margin-bottom: 8px;
-  font-weight: bold;
 }
 main .grid .datosmapa {
   width: 100%;
   height: 750px;
   padding: 0px 52px;
-  margin-bottom: 156px;
+  margin-bottom: 104px;
   grid-area: datosmapa;
 }
 main .grid .datosmapa .info {
@@ -514,43 +520,43 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   }
   /* FIN PAG 1 "HOME"*/
   /*INICIO PAG 2 "ABOUT ME"*/
-  .main-aboutme .container .contactame {
+  .mainaboutme .container .contactame {
     width: 344px;
     height: 318px;
     margin: 52px 68px;
     padding: 4px 8px;
     margin-bottom: 6px;
   }
-  .main-aboutme .container .contactame .tituloparrafo {
+  .mainaboutme .container .contactame .tituloparrafo {
     font-size: 16px;
     margin-left: 8px;
     margin-bottom: 0px;
   }
-  .main-aboutme .container .contactame .parrafocontactame {
+  .mainaboutme .container .contactame .parrafocontactame {
     margin-bottom: 0px;
     padding: 8px 80px 8px 8px;
     font-size: 12px;
   }
-  .main-aboutme .container .contactame div div a {
+  .mainaboutme .container .contactame div div a {
     font-size: 14px;
     width: 100px;
     margin-left: 8px;
   }
-  .main-aboutme .container .video iframe {
+  .mainaboutme .container .video iframe {
     width: 344px;
     height: 318px;
     margin: 52px 68px 0px;
   }
-  .main-aboutme .cajaaboutme {
+  .mainaboutme .cajaaboutme {
     margin: 52px 68px;
     width: 344px;
     font-size: 14px;
     height: auto;
   }
-  .main-aboutme .cajaaboutme .aboutme h2 {
+  .mainaboutme .cajaaboutme .aboutme h2 {
     font-size: 18px;
   }
-  .main-aboutme .cajaaboutme .aboutme h4 {
+  .mainaboutme .cajaaboutme .aboutme h4 {
     font-size: 16px;
   }
   /*FIN PAG 2 "ABOUT ME"*/
@@ -587,18 +593,17 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     width: 350px;
     height: 171px;
   }
+  /*FIN PAG 4 "PROJECTS"*/
+  /*PAG 5 "CONTACT"*/
+  main .grid {
+    grid-template-rows: 14% 44% 44%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
+  }
+  main .grid .datosformulario {
+    margin-left: 52px;
+  }
 }
-/*FIN PAG 4 "PROJECTS"*/
-/*PAG 5 "CONTACT"*/
-main .grid {
-  grid-template-rows: 14% 44% 44%;
-  grid-template-columns: 1fr;
-  grid-template-areas: "contacttexto" "datosmapa" "datosformulario ";
-}
-main .grid .datosformulario {
-  margin-left: 52px;
-}
-
 /*FIN 5 "CONTACT"*/
 
 /*# sourceMappingURL=style.css.map */

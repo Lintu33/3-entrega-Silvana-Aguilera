@@ -74,13 +74,13 @@
                 .cualidades:not(:last-child) {
                     margin-right: 0px;
                 }
+                }
             }
-        }
         }
     }
     /* FIN PAG 1 "HOME"*/
     /*INICIO PAG 2 "ABOUT ME"*/
-    .main-aboutme {
+    .mainaboutme {
         .container {
             .contactame {
                 width: map-get($medidas, queries-ancho);
@@ -134,11 +134,11 @@
                 .col-lg-6{
                     .resume-item{
                         margin-bottom: map-get($medidas, margen-arriba);  
+                    }
                 }
             }
         }
     }
-}
     /*FIN PAG 3 "RESUME"*/
     /*INICIO PAG 4 "PROJECTS"*/
     .body-projects {
@@ -173,7 +173,6 @@
                 }
             }
         }
-    }    
     /*FIN PAG 4 "PROJECTS"*/
     /*PAG 5 "CONTACT"*/
     main {
@@ -187,6 +186,7 @@
         .datosformulario{
             margin-left: map-get($medidas,margen-arriba );
             }
-        }  
+        }
     } 
+}     
 /*FIN 5 "CONTACT"*/

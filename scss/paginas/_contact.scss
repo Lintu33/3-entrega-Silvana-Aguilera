@@ -10,9 +10,8 @@ main {
       grid-area: contacttexto;
       .section-title {
         margin: map-get($medidas, margen-arriba) map-get($medidas, margen-arriba) 0px;
-        h1 {
+        h2 {
           margin-bottom: map-get($medidas, padding-parrafo1);
-          font-weight: bold;
         }
       }
     }

@@ -7,6 +7,16 @@ main{
             .section-title{
                 margin-bottom: map-get($medidas,margen-arriba);
                 }
+            .row{
+                .col-lg-6{
+                    padding-right: map-get($medidas,margen-arriba);
+                    .resume-title,
+                    .resume-item{
+                        padding-top: 36px;
+                    }
+                }
+                
+            }    
                         }
         }
 
