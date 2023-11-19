@@ -550,12 +550,12 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     width: 90px;
     margin-left: 8px;
   }
-  .mainaboutme .container .video {
+  .mainaboutme .container .cajavideo .video {
     margin: 0px 26px 26px 26px;
     align-items: center;
     justify-content: center;
   }
-  .mainaboutme .container .video iframe {
+  .mainaboutme .container .cajavideo .video iframe {
     width: auto;
     height: auto;
   }
@@ -573,11 +573,21 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   }
   /*FIN PAG 2 "ABOUT ME"*/
   /*INICIO PAG 3 "RESUME"*/
-  .resume {
-    margin: 0px 52px;
+  main .resume {
+    margin: 0px;
   }
-  .resume .container-resume .row .col-lg-6 .resume-item {
-    margin-bottom: 52px;
+  main .resume .container-resume .section-title .parrafosummary {
+    margin-bottom: 0px;
+  }
+  main .resume .container-resume .row .col-lg-6 {
+    padding: 0px;
+  }
+  main .resume .container-resume .row .col-lg-6 .resume-title {
+    padding-top: 16px;
+    margin-bottom: 0px;
+  }
+  main .resume .container-resume .row .col-lg-6 .resume-item {
+    padding-top: 8px;
   }
   /*FIN PAG 3 "RESUME"*/
   /*INICIO PAG 4 "PROJECTS"*/

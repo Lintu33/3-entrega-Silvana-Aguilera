@@ -107,17 +107,22 @@
                     margin-left: map-get($medidas, padding-parrafo1);
                 }
             }
-            .video{  
-                margin: 0px map-get($medidas, queries-margin) map-get($medidas, queries-margin) map-get($medidas, queries-margin);
-                align-items: center;
-                justify-content: center;
-                iframe {
-                    width: auto;
-                    height: auto;
-                    
-                   
+            .cajavideo{
+                
+                .video{  
+                    margin: 0px map-get($medidas, queries-margin) map-get($medidas, queries-margin) map-get($medidas, queries-margin);
+                    align-items: center;
+                    justify-content: center;
+                    iframe {
+                        width: auto;
+                        height: auto;
+                        
+                       
+                    }
                 }
+
             }
+            
         }
         .cajaaboutme {
             margin: map-get($medidas, queries-margin);
@@ -136,18 +141,33 @@
     }
     /*FIN PAG 2 "ABOUT ME"*/
     /*INICIO PAG 3 "RESUME"*/
-    .resume {
-        margin: 0px map-get($medidas, margen-arriba);
-        .container-resume{
-            .row{
-                .col-lg-6{
-                    .resume-item{
-                        margin-bottom: map-get($medidas, margen-arriba);  
+    main{
+        .resume {
+            margin: 0px;
+            .container-resume{
+                .section-title{
+                    .parrafosummary{
+                       margin-bottom: 0px;
+                    }
+                }
+                .row{
+                    .col-lg-6{
+                        padding: 0px;
+                        .resume-title{
+                            padding-top: 16px;
+                            margin-bottom: 0px;
+                        }
+                        .resume-item{
+                            padding-top: map-get($medidas , padding-parrafo1);
+
+                              
+                        }
                     }
                 }
             }
         }
     }
+    
     /*FIN PAG 3 "RESUME"*/
     /*INICIO PAG 4 "PROJECTS"*/
     .body-projects {
