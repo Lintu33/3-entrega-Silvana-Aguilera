@@ -102,7 +102,7 @@
                     margin-bottom:map-get($medidas, padding-parrafo1) ;
                 }
                 div div a {
-                    font-size: map-get($tamanios, h5);
+                    font-size: map-get($tamanios, h6);
                     width: map-get($medidas, queries-boton);
                     margin-left: map-get($medidas, padding-parrafo1);
                 }
@@ -147,7 +147,7 @@
             .container-resume{
                 .section-title{
                     .parrafosummary{
-                       margin-bottom: 0px;
+                    margin-bottom: 0px;
                     }
                 }
                 .row{
@@ -159,8 +159,6 @@
                         }
                         .resume-item{
                             padding-top: map-get($medidas , padding-parrafo1);
-
-                              
                         }
                     }
                 }
@@ -174,9 +172,11 @@
         main {
             .container {
                 .row {
-                    width: 480px;
+                    width: auto;
+                    padding-right: 0px;
                     .col-9 {
-                        width: 350px;
+                        width: auto;
+              
                     .carousel-indicators {
                         .circle {
                             width: 12px;
@@ -184,36 +184,77 @@
                             }
                         }
                     .carousel-inner {
-                                width: 350px;
-                                padding-top: 54px;
-                                height: 254px;
+                                width: auto;
+                                padding-top: 26px;
+                                height: auto;
+                                margin:map-get($medidas,queries-margin);
                             .carousel-control-prev,
                             .carousel-control-next{
-                                    height: 171px;
-                                    margin-top: 54px;
+                                    height: auto;
+                                    margin-top: 26px;
                                 }
                                 img {
-                                    width: 350px;
-                                    height: 171px;
+                                    width: 100%;
                                 }
                             }
                         }
                     }
                 }
+            .trabajemos{
+                margin:map-get($medidas,queries-margin);
+                .contacto{
+                    .botoncontact{
+                        a{
+                            font-size: map-get($tamanios, h6);
+                        }
+                    }
+                }
+            }    
             }
         }
     /*FIN PAG 4 "PROJECTS"*/
     /*PAG 5 "CONTACT"*/
     main {
         .grid{
-        grid-template-rows: 14% 44% 44%;
+        grid-template-rows: 12% 44% 44%;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "contacttexto"
         "datosmapa"
         "datosformulario ";
+        .contacttexto{
+            margin: 32px;
+            .section-title{
+                margin: 0px;
+            }
+        }
+        .datosmapa {
+            padding: 32px;
+            margin: 0px;
+            margin-bottom: map-get($medidas, margen-inferior);
+            margin-top: 32px;
+            grid-area: datosmapa;
+            .info {
+                padding: map-get($medidas, padding-parrafo2);
+                .address,
+                .email,
+                .phone {
+                    padding-bottom: map-get($medidas, padding-parrafo4);
+                    img{
+                        width: 32px;
+                        height: 32px;   
+                }
+            }      
+        }
+    }
         .datosformulario{
-            margin-left: map-get($medidas,margen-arriba );
+            margin: 0px;
+            padding: 0 32px;
+            .enviarmensaje{
+                margin-top: 26px;
+                padding: 16px;
+                height: 100%;  
+                }
             }
         }
     } 
