@@ -550,13 +550,18 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     width: 90px;
     margin-left: 8px;
   }
+  .mainaboutme .container .video {
+    margin: 0px 26px 26px 26px;
+    align-items: center;
+    justify-content: center;
+  }
   .mainaboutme .container .video iframe {
-    width: 292px;
-    height: 290px;
+    width: auto;
+    height: auto;
   }
   .mainaboutme .cajaaboutme {
-    margin: 52px 68px;
-    width: 292px;
+    margin: 26px;
+    width: auto;
     font-size: 14px;
     height: auto;
   }

@@ -107,15 +107,21 @@
                     margin-left: map-get($medidas, padding-parrafo1);
                 }
             }
-            .video iframe {
-                width: map-get($medidas, queries-ancho);
-                height: map-get($medidas, queries-alto);
-               
+            .video{  
+                margin: 0px map-get($medidas, queries-margin) map-get($medidas, queries-margin) map-get($medidas, queries-margin);
+                align-items: center;
+                justify-content: center;
+                iframe {
+                    width: auto;
+                    height: auto;
+                    
+                   
+                }
             }
         }
         .cajaaboutme {
-            margin: map-get($medidas, margen-arriba) map-get($medidas, queries-marginleft);
-            width: map-get($medidas, queries-ancho);
+            margin: map-get($medidas, queries-margin);
+            width: auto;
             font-size: map-get($tamanios, h5);
             height: auto;
             .aboutme {
