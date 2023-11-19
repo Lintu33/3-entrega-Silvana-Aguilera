@@ -3,6 +3,7 @@
     /*Nav bar*/
     .navbar {
         .container-fluid {
+            padding: map-get($medidas,sin-padding) map-get($medidas,queries-margin);
             .navbar-brand {
                 font-size: map-get($tamanios, h4);
             }
@@ -35,14 +36,13 @@
                 padding-top: 78px;
                 /*subtitulo hello*/
                 .titulohello {
-                    font-size: map-get($tamanios, h4);
+                    font-size: map-get($tamanios, h5);
                 }
                 .parrafohello {
-                    font-size: map-get($tamanios, h3);
+                    font-size: map-get($tamanios, h4);
                 }
                 .botoncajasaludo {
-                    font-size: map-get($tamanios, h5);
-                    width: map-get($medidas, queries-boton);
+                    font-size: map-get($tamanios, h6);
                 }
             }
             /*Seccion cualidades del desarrollador (con imagen)*/
@@ -58,7 +58,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 480px;
+            width: auto;
             .cajascualidades {
             display: flex;
             flex-direction: column;
@@ -83,9 +83,9 @@
     .mainaboutme {
         .container {
             .contactame {
-                width: map-get($medidas, queries-ancho);
-                height: map-get($medidas, queries-alto);
-                margin: map-get($medidas, margen-arriba) map-get($medidas, queries-marginleft);
+                width: auto;
+                height:auto;
+                margin: map-get($medidas, margen-arriba) map-get($medidas, queries-margin);
                 padding: map-get($medidas, queries-parrafo1) map-get($medidas, padding-parrafo1);
                 margin-bottom: 6px;
                 .tituloparrafo {
@@ -98,6 +98,9 @@
                     padding: map-get($medidas, padding-parrafo1) 80px map-get($medidas, padding-parrafo1) map-get($medidas, padding-parrafo1);
                     font-size: map-get($tamanios, h6);
                 }
+                div div{
+                    margin-bottom:map-get($medidas, padding-parrafo1) ;
+                }
                 div div a {
                     font-size: map-get($tamanios, h5);
                     width: map-get($medidas, queries-boton);
@@ -107,7 +110,7 @@
             .video iframe {
                 width: map-get($medidas, queries-ancho);
                 height: map-get($medidas, queries-alto);
-                margin: map-get($medidas, margen-arriba) map-get($medidas, queries-marginleft) 0px;
+               
             }
         }
         .cajaaboutme {

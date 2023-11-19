@@ -452,6 +452,9 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
 /*RESPONSIVE*/
 @media (min-width: 320px) and (max-width: 480px) {
   /*Nav bar*/
+  .navbar .container-fluid {
+    padding: 0px 26px;
+  }
   .navbar .container-fluid .navbar-brand {
     font-size: 16px;
   }
@@ -477,24 +480,23 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     /*Seccion cualidades del desarrollador (con imagen)*/
   }
   .pag1 .saludoydibujo .cajasaludo {
-    width: 344px;
-    height: 318px;
+    width: 292px;
+    height: 290px;
     padding-top: 78px;
     /*subtitulo hello*/
   }
   .pag1 .saludoydibujo .cajasaludo .titulohello {
-    font-size: 16px;
+    font-size: 14px;
   }
   .pag1 .saludoydibujo .cajasaludo .parrafohello {
-    font-size: 18px;
+    font-size: 16px;
   }
   .pag1 .saludoydibujo .cajasaludo .botoncajasaludo {
-    font-size: 14px;
-    width: 100px;
+    font-size: 12px;
   }
   .pag1 .saludoydibujo .dibujo img {
-    width: 344px;
-    height: 318px;
+    width: 292px;
+    height: 290px;
     margin-top: 26px;
   }
   .pag1 .sectioncualidades {
@@ -502,7 +504,7 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 480px;
+    width: auto;
   }
   .pag1 .sectioncualidades .cajascualidades {
     display: flex;
@@ -512,7 +514,7 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   }
   .pag1 .sectioncualidades .cajascualidades .cualidades {
     padding: 20px;
-    width: 344px;
+    width: 292px;
     height: 165px;
   }
   .pag1 .sectioncualidades .cajascualidades .cualidades img {
@@ -524,9 +526,9 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   /* FIN PAG 1 "HOME"*/
   /*INICIO PAG 2 "ABOUT ME"*/
   .mainaboutme .container .contactame {
-    width: 344px;
-    height: 318px;
-    margin: 52px 68px;
+    width: auto;
+    height: auto;
+    margin: 52px 26px;
     padding: 4px 8px;
     margin-bottom: 6px;
   }
@@ -540,19 +542,21 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
     padding: 8px 80px 8px 8px;
     font-size: 12px;
   }
+  .mainaboutme .container .contactame div div {
+    margin-bottom: 8px;
+  }
   .mainaboutme .container .contactame div div a {
     font-size: 14px;
-    width: 100px;
+    width: 90px;
     margin-left: 8px;
   }
   .mainaboutme .container .video iframe {
-    width: 344px;
-    height: 318px;
-    margin: 52px 68px 0px;
+    width: 292px;
+    height: 290px;
   }
   .mainaboutme .cajaaboutme {
     margin: 52px 68px;
-    width: 344px;
+    width: 292px;
     font-size: 14px;
     height: auto;
   }
