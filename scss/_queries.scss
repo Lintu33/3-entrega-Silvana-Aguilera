@@ -81,63 +81,72 @@
     /* FIN PAG 1 "HOME"*/
     /*INICIO PAG 2 "ABOUT ME"*/
     .mainaboutme {
-        .container {
-            .contactame {
-                width: auto;
-                height:auto;
-                margin: map-get($medidas, margen-arriba) map-get($medidas, queries-margin);
-                padding: map-get($medidas, queries-parrafo1) map-get($medidas, padding-parrafo1);
-                margin-bottom: 6px;
-                .tituloparrafo {
-                    font-size: map-get($tamanios, h4);
-                    margin-left: map-get($medidas, padding-parrafo1);
-                    margin-bottom: map-get($medidas, sin-padding);
-                }
-                .parrafocontactame {
-                    margin-bottom: 0px;
-                    padding: map-get($medidas, padding-parrafo1) 80px map-get($medidas, padding-parrafo1) map-get($medidas, padding-parrafo1);
-                    font-size: map-get($tamanios, h6);
-                }
-                div div{
-                    margin-bottom:map-get($medidas, padding-parrafo1) ;
-                }
-                div div a {
-                    font-size: map-get($tamanios, h6);
-                    width: map-get($medidas, queries-boton);
-                    margin-left: map-get($medidas, padding-parrafo1);
-                }
-            }
-            .cajavideo{
+        .container{
+            .row{
+                .col{
+                    .contactameyvideo{
+                        .contactame {
+                            width: auto;
+                            height:auto;
+                            margin: map-get($medidas, margen-arriba) map-get($medidas, queries-margin);
+                            padding: map-get($medidas, queries-parrafo1) map-get($medidas, padding-parrafo1);
+                            margin-bottom: 6px;
+                            .tituloparrafo {
+                                font-size: map-get($tamanios, h4);
+                                margin-left: map-get($medidas, padding-parrafo1);
+                                margin-bottom: map-get($medidas, sin-padding);
+                            }
+                            .parrafocontactame {
+                                margin-bottom: 0px;
+                                padding: map-get($medidas, padding-parrafo1) 80px map-get($medidas, padding-parrafo1) map-get($medidas, padding-parrafo1);
+                                font-size: map-get($tamanios, h6);
+                            }
+                            div{
+                                margin-bottom:map-get($medidas, padding-parrafo1) ;
+                                a {
+                                    font-size: map-get($tamanios, h6);
+                                    width: map-get($medidas, queries-boton);
+                                    margin-left: map-get($medidas, padding-parrafo1);
+                                }
+                            }
+                             
+                        }
+                    }
+                } 
+                .cajavideo{
+                    width: 320px;
+                    .video iframe{  
+                        width: 84%;
+                        height: 100%;
+                        margin: 52px 26px 26px 26px;    
+                        }
+                }   
                 
-                .video{  
-                    margin: 0px map-get($medidas, queries-margin) map-get($medidas, queries-margin) map-get($medidas, queries-margin);
-                    align-items: center;
-                    justify-content: center;
-                    iframe {
+                
+                    
+                           
+            }
+        }
+        .container{
+            .row{
+                .col{
+                    .cajaaboutme {
+                        margin: map-get($medidas, queries-margin);
                         width: auto;
+                        font-size: map-get($tamanios, h5);
                         height: auto;
-                        
-                       
+                        .aboutme {
+                            h2 {
+                                font-size: map-get($tamanios, h3);
+                            }
+                            h4 {
+                                font-size: map-get($tamanios, h4);
+                            }
+                        }
                     }
                 }
-
             }
-            
-        }
-        .cajaaboutme {
-            margin: map-get($medidas, queries-margin);
-            width: auto;
-            font-size: map-get($tamanios, h5);
-            height: auto;
-            .aboutme {
-                h2 {
-                    font-size: map-get($tamanios, h3);
-                }
-                h4 {
-                    font-size: map-get($tamanios, h4);
-                }
-            }
-        }
+        }      
     }
     /*FIN PAG 2 "ABOUT ME"*/
     /*INICIO PAG 3 "RESUME"*/
@@ -176,7 +185,7 @@
                     padding-right: 0px;
                     .col-9 {
                         width: auto;
-              
+            
                     .carousel-indicators {
                         .circle {
                             width: 12px;

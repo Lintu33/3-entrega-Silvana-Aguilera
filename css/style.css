@@ -525,50 +525,49 @@ main .grid .datosformulario .enviarmensaje .container input[type=submit]:hover {
   }
   /* FIN PAG 1 "HOME"*/
   /*INICIO PAG 2 "ABOUT ME"*/
-  .mainaboutme .container .contactame {
+  .mainaboutme .container .row .col .contactameyvideo .contactame {
     width: auto;
     height: auto;
     margin: 52px 26px;
     padding: 4px 8px;
     margin-bottom: 6px;
   }
-  .mainaboutme .container .contactame .tituloparrafo {
+  .mainaboutme .container .row .col .contactameyvideo .contactame .tituloparrafo {
     font-size: 16px;
     margin-left: 8px;
     margin-bottom: 0px;
   }
-  .mainaboutme .container .contactame .parrafocontactame {
+  .mainaboutme .container .row .col .contactameyvideo .contactame .parrafocontactame {
     margin-bottom: 0px;
     padding: 8px 80px 8px 8px;
     font-size: 12px;
   }
-  .mainaboutme .container .contactame div div {
+  .mainaboutme .container .row .col .contactameyvideo .contactame div {
     margin-bottom: 8px;
   }
-  .mainaboutme .container .contactame div div a {
+  .mainaboutme .container .row .col .contactameyvideo .contactame div a {
     font-size: 12px;
     width: 90px;
     margin-left: 8px;
   }
-  .mainaboutme .container .cajavideo .video {
-    margin: 0px 26px 26px 26px;
-    align-items: center;
-    justify-content: center;
+  .mainaboutme .container .row .cajavideo {
+    width: 320px;
   }
-  .mainaboutme .container .cajavideo .video iframe {
-    width: auto;
-    height: auto;
+  .mainaboutme .container .row .cajavideo .video iframe {
+    width: 84%;
+    height: 100%;
+    margin: 52px 26px 26px 26px;
   }
-  .mainaboutme .cajaaboutme {
+  .mainaboutme .container .row .col .cajaaboutme {
     margin: 26px;
     width: auto;
     font-size: 14px;
     height: auto;
   }
-  .mainaboutme .cajaaboutme .aboutme h2 {
+  .mainaboutme .container .row .col .cajaaboutme .aboutme h2 {
     font-size: 18px;
   }
-  .mainaboutme .cajaaboutme .aboutme h4 {
+  .mainaboutme .container .row .col .cajaaboutme .aboutme h4 {
     font-size: 16px;
   }
   /*FIN PAG 2 "ABOUT ME"*/
